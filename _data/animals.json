@@ -1,0 +1,15 @@
+{
+    "tier1": [
+        {
+            "Name": "Fish",
+            "HP": 3,
+            "Attack": 2,
+            "Ability1": "bla",
+            "Ability2": "blabla",
+            "Ability3": "blablabla",
+            "Path": "/assets.Fish.png"
+        }
+    ],
+    "tier2": [],
+    "tier3": []
+}
