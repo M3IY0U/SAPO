@@ -25,7 +25,7 @@
             "ability1": "Eat shop food: Give shop animals +1 Health",
             "ability2": "Eat shop food: Give shop animals +2 Health",
             "ability3": "Eat shop food: Give shop animals +3 Health",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Beetle.png"
         },
         {
             "name": "Bluebird",
@@ -34,7 +34,7 @@
             "ability1": "End turn: Give left-most friend +1 Attack",
             "ability2": "End turn: Give left-most friend +2 Attack",
             "ability3": "End turn: Give left-most friend +3 Attack",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Bluebird.png"
         },
         {
             "name": "Cricket",
@@ -43,7 +43,7 @@
             "ability1": "Faint: Summon a 1/1 Cricket",
             "ability2": "Faint: Summon a 3/3 Cricket",
             "ability3": "Faint: Summon a 3/3 Cricket",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Cricket.png"
         },
         {
             "name": "Fish",
@@ -61,7 +61,7 @@
             "ability1": "Buy food: Gain +1/+1 until end of battle",
             "ability2": "Buy food: Gain +2/+2 until end of battle",
             "ability3": "Buy food: Gain +3/+3 until end of battle",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Ladybug.png"
         },
         {
             "name": "Mosquito",
@@ -70,7 +70,7 @@
             "ability1": "Start of battle: Deal 1 damage to a random enemy",
             "ability2": "Start of battle: Deal 2 damage to a random enemy",
             "ability3": "Start of battle: Deal 3 damage to a random enemy",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Mosquito.png"
         },
         {
             "name": "Pig",
@@ -79,7 +79,7 @@
             "ability1": "Sell: Gain an extra 1 gold",
             "ability2": "Sell: Gain an extra 2 gold",
             "ability3": "Sell: Gain an extra 3 gold",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Pig.png"
         }
     ],
     "tier2": [
@@ -90,7 +90,7 @@
             "ability1": "Start of battle: Make 1 enemy Weak",
             "ability2": "Start of battle: Make 2 enemies Weak",
             "ability3": "Start of battle: Make 2 enemies Weak",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Bat.png"
         },
         {
             "name": "Dog",
@@ -99,7 +99,7 @@
             "ability1": "Friend summoned: Gain +1 Attack or +1 Health",
             "ability2": "Friend summoned: Gain +2 Attack or +2 Health",
             "ability3": "Friend summoned: Gain +3 Attack or +3 Health",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Dog.png"
         },
         {
             "name": "Dromedary",
@@ -108,7 +108,7 @@
             "ability1": "Start of turn: Give shop animals +1/+1",
             "ability2": "Start of turn: Give shop animals +2/+2",
             "ability3": "Start of turn: Give shop animals +3/+3",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Dromedary.png"
         },
         {
             "name": "Flamingo",
@@ -117,7 +117,7 @@
             "ability1": "Faint: Give the two friends behind +1/+1",
             "ability2": "Faint: Give the two friends behind +2/+2",
             "ability3": "Faint: Give the two friends behind +3/+3",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Flamingo.png"
         },
         {
             "name": "Hedgehog",
@@ -126,7 +126,7 @@
             "ability1": "Faint: Deal 2 damage to all",
             "ability2": "Faint: Deal 4 damage to all",
             "ability3": "Faint: Deal 6 damage to all",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Hedgehog.png"
         },
         {
             "name": "Peacock",
@@ -135,7 +135,7 @@
             "ability1": "Hurt: Gain +2 Attack",
             "ability2": "Hurt: Gain +4 Attack",
             "ability3": "Hurt: Gain +6 Attack",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Peacock.png"
         },
         {
             "name": "Rat",
@@ -144,7 +144,7 @@
             "ability1": "Faint: Summon one 1/1 Dirty Rat for the opponent that betrays him (1 Damage to front animal on attack)",
             "ability2": "Faint: Summon one 1/1 Dirty Rat for the opponent that betrays him (1 Damage to front animal on attack)",
             "ability3": "Faint: Summon one 1/1 Dirty Rat for the opponent that betrays him (1 Damage to front animal on attack)",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Rat.png"
         },
         {
             "name": "Shrimp",
@@ -153,7 +153,7 @@
             "ability1": "Friend solt: Give a random friend +1 Health",
             "ability2": "Friend solt: Give a random friend +2 Health",
             "ability3": "Friend solt: Give a random friend +3 Health",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Shrimp.png"
         },
         {
             "name": "Spider",
@@ -162,7 +162,7 @@
             "ability1": "Faint: Summon one tier 3 animal as a 2/2",
             "ability2": "Faint: Summon one tier 3 animal as a 4/4",
             "ability3": "Faint: Summon one tier 3 animal as a 6/6",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Spider.png"
         },
         {
             "name": "Swan",
@@ -171,7 +171,7 @@
             "ability1": "Start of turn: Gain 1 gold",
             "ability2": "Start of turn: Gain 2 gold",
             "ability3": "Start of turn: Gain 3 gold",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Swan.png"
         },
         {
             "name": "Tabby Cat",
@@ -180,7 +180,7 @@
             "ability1": "Eats shop food: Give friends +1 Attack until end of battle",
             "ability2": "Eats shop food: Give friends +2 Attack until end of battle",
             "ability3": "Eats shop food: Give friends +3 Attack until end of battle",
-            "path": "./assets/Fish.png"
+            "path": "./assets/TabbyCat.png"
         }
     ],
     "tier3": [
@@ -191,7 +191,7 @@
             "ability1": "Hurt: Deal 2 damage to a random enemy",
             "ability2": "Hurt: Deal 4 damage to a random enemy",
             "ability3": "Hurt: Deal 6 damage to a random enemy",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Blowfish.png"
         },
         {
             "name": "Caterpillar",
@@ -200,7 +200,7 @@
             "ability1": "Start of turn: Gain 1 Experience",
             "ability2": "Start of turn: Gain 1 Experience",
             "ability3": "Start of battle: Evolve into a Butterfly (Copy stats of highest friend on field)",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Caterpillar.png"
         },
         {
             "name": "Hatching Chick",
@@ -209,7 +209,7 @@
             "ability1": "End turn: Give +5/+5 to friend ahead until end of battle",
             "ability2": "End turn: Give +2/+2 to friend ahead",
             "ability3": "Start of turn: Give +1 Experience to friend ahead",
-            "path": "./assets/Fish.png"
+            "path": "./assets/HatchingChick.png"
         },
         {
             "name": "Owl",
@@ -218,7 +218,7 @@
             "ability1": "Sell: Give a random friend +2/+2",
             "ability2": "Sell: Give a random friend +2/+2",
             "ability3": "Sell: Give a random friend +2/+2",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Owl.png"
         },
         {
             "name": "Puppy",
@@ -227,7 +227,7 @@
             "ability1": "End turn: If you have 2 or more gold, gain +2/+2",
             "ability2": "End turn: If you have 2 or more gold, gain +4/+4",
             "ability3": "End turn: If you have 2 or more gold, gain +6/+6",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Puppy.png"
         },
         {
             "name": "Rabbit",
@@ -236,7 +236,7 @@
             "ability1": "Friend eats shop food: Give it +1 Health",
             "ability2": "Friend eats shop food: Give it +2 Health",
             "ability3": "Friend eats shop food: Give it +3 Health",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Rabbit.png"
         },
         {
             "name": "Sheep",
@@ -245,7 +245,7 @@
             "ability1": "Faint: Summon two 2/2 Rams",
             "ability2": "Faint: Summon two 4/4 Rams",
             "ability3": "Faint: Summon two 6/6 Rams",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Sheep.png"
         },
         {
             "name": "Snail",
@@ -254,7 +254,7 @@
             "ability1": "Buy: If you lost last battle, give all friends +2/+1",
             "ability2": "Buy: If you lost last battle, give all friends +4/+2",
             "ability3": "Buy: If you lost last battle, give all friends +6/+3",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Snail.png"
         },
         {
             "name": "Tropical Fish",
@@ -263,7 +263,7 @@
             "ability1": "End turn: Give adjacent friends +1 Health",
             "ability2": "End turn: Give adjacent friends +2 Health",
             "ability3": "End turn: Give adjacent friends +3 Health",
-            "path": "./assets/Fish.png"
+            "path": "./assets/TropicalFish.png"
         },
         {
             "name": "Turtle",
@@ -272,7 +272,238 @@
             "ability1": "Give friend behind Melon Armor",
             "ability2": "Give 2 friends behind Melon Armor",
             "ability3": "Give 3 friends behind Melon Armor",
-            "path": "./assets/Fish.png"
+            "path": "./assets/Turtle.png"
+        }
+    ],
+    "tier4": [
+        {
+            "name": "Bison",
+            "attack": 6,
+            "hp": 6,
+            "ability1": "End turn: Gain +2/+2 if there is at least one Lvl. 3 friend",
+            "ability2": "End turn: Gain +4/+4 if there is at least one Lvl. 3 friend",
+            "ability3": "End turn: Gain +6/+6 if there is at least one Lvl. 3 friend",
+            "path": "./assets/Bison.png"
+        },
+        {
+            "name": "Buffalo",
+            "attack": 5,
+            "hp": 5,
+            "ability1": "Friend bought: Gain +1/+1",
+            "ability2": "Friend bought: Gain +2/+2",
+            "ability3": "Friend bought: Gain +3/+3",
+            "path": "./assets/Buffalo.png"
+        },
+        {
+            "name": "Deer",
+            "attack": 1,
+            "hp": 1,
+            "ability1": "Faint: Summon a 5/5 Bus with Splash Attack",
+            "ability2": "Faint: Summon a 10/10 Bus with Splash Attack",
+            "ability3": "Faint: Summon a 15/15 Bus with Splash Attack",
+            "path": "./assets/Deer.png"
+        },
+        {
+            "name": "Llama",
+            "attack": 2,
+            "hp": 5,
+            "ability1": "End turn: If you habe 4 or less animals, gain +2/+2",
+            "ability2": "End turn: If you habe 4 or less animals, gain +4/+4",
+            "ability3": "End turn: If you habe 4 or less animals, gain +6/+6",
+            "path": "./assets/Llama.png"
+        },
+        {
+            "name": "Lobster",
+            "attack": 3,
+            "hp": 3,
+            "ability1": "Friend summoned: Give it +2/+2 when not in battle",
+            "ability2": "Friend summoned: Give it +4/+4 when not in battle",
+            "ability3": "Friend summoned: Give it +6/+6 when not in battle",
+            "path": "./assets/Lobster.png"
+        },
+        {
+            "name": "Poodle",
+            "attack": 4,
+            "hp": 2,
+            "ability1": "End turn: Give +1/+1 to different tier animals",
+            "ability2": "End turn: Give +2/+2 to different tier animals",
+            "ability3": "End turn: Give +3/+3 to different tier animals",
+            "path": "./assets/Poodle.png"
+        },
+        {
+            "name": "Rooster",
+            "attack": 3,
+            "hp": 3,
+            "ability1": "Faint: Summon a Chick with the same Attack as this",
+            "ability2": "Faint: Summon 2 Chicks with the same Attack as this",
+            "ability3": "Faint: Summon 3 Chicks with the same Attack as this",
+            "path": "./assets/Rooster.png"
+        },
+        {
+            "name": "Skunk",
+            "attack": 3,
+            "hp": 5,
+            "ability1": "Start of battle: Reduce the highest Health enemy by 33%",
+            "ability2": "Start of battle: Reduce the highest Health enemy by 66%",
+            "ability3": "Start of battle: Reduce the highest Health enemy by 100%",
+            "path": "./assets/Skunk.png"
+        },
+        {
+            "name": "Squirrel",
+            "attack": 2,
+            "hp": 2,
+            "ability1": "Buy: Clear and fill shops with food",
+            "ability2": "Buy: Clear and fill shops with food",
+            "ability3": "Buy: Clear and fill shops with food",
+            "path": "./assets/Squirrel.png"
+        },
+        {
+            "name": "Worm",
+            "attack": 1,
+            "hp": 1,
+            "ability1": "Eats shop food: Gain +1/+1",
+            "ability2": "Eats shop food: Gain +2/+2",
+            "ability3": "Eats shop food: Gain +3/+3",
+            "path": "./assets/Worm.png"
+        }
+    ],
+    "tier5": [
+        {
+            "name": "Chicken",
+            "attack": 3,
+            "hp": 4,
+            "ability1": "Buy tier 1 animal: Give current and future shop animals +1/+1",
+            "ability2": "Buy tier 1 animal: Give current and future shop animals +2/+2",
+            "ability3": "Buy tier 1 animal: Give current and future shop animals +3/+3",
+            "path": "./assets/Chicken.png"
+        },
+        {
+            "name": "Cow",
+            "attack": 4,
+            "hp": 6,
+            "ability1": "Buy: Replace food shop with 2 free milk that gives +2/+2",
+            "ability2": "Buy: Replace food shop with 2 free milk that gives +2/+2",
+            "ability3": "Buy: Replace food shop with 2 free milk that gives +2/+2",
+            "path": "./assets/Cow.png"
+        },
+        {
+            "name": "Eagle",
+            "attack": 6,
+            "hp": 5,
+            "ability1": "Faint: Summon one Lvl. 1 tier 6 animal",
+            "ability2": "Faint: Summon one Lvl. 2 tier 6 animal",
+            "ability3": "Faint: Summon one Lvl. 3 tier 6 animal",
+            "path": "./assets/Eagle.png"
+        },
+        {
+            "name": "Goat",
+            "attack": 4,
+            "hp": 5,
+            "ability1": "Friend bought: Gain 1 gold",
+            "ability2": "Friend bought: Gain 1 gold",
+            "ability3": "Friend bought: Gain 1 gold",
+            "path": "./assets/Goat.png"
+        },
+        {
+            "name": "Microbe",
+            "attack": 1,
+            "hp": 1,
+            "ability1": "Faint: Make all animals Weak",
+            "ability2": "Faint: Make all animals Weak",
+            "ability3": "Faint: Make all animals Weak",
+            "path": "./assets/Microbe.png"
+        },
+        {
+            "name": "Rhino",
+            "attack": 5,
+            "hp": 6,
+            "ability1": "Knock out: Deal 4 damage to the first enemy",
+            "ability2": "Knock out: Deal 8 damage to the first enemy",
+            "ability3": "Knock out: Deal 12 damage to the first enemy",
+            "path": "./assets/Rhino.png"
+        },
+        {
+            "name": "Scorpion",
+            "attack": 1,
+            "hp": 1,
+            "ability1": "No ability (comes with poison attack)",
+            "ability2": "No ability (comes with poison attack)",
+            "ability3": "No ability (comes with poison attack)",
+            "path": "./assets/Scorpion.png"
+        },
+        {
+            "name": "Seal",
+            "attack": 3,
+            "hp": 6,
+            "ability1": "Eats shop food: Give 2 random friends +1/+1",
+            "ability2": "Eats shop food: Give 2 random friends +2/+2",
+            "ability3": "Eats shop food: Give 2 random friends +3/+3",
+            "path": "./assets/Seal.png"
+        }
+    ],
+    "tier6": [
+        {
+            "name": "Dragon",
+            "attack": 6,
+            "hp": 8,
+            "ability1": "Buy tier 1 animal: Give all friends +1/+1",
+            "ability2": "Buy tier 1 animal: Give all friends +2/+2",
+            "ability3": "Buy tier 1 animal: Give all friends +3/+3",
+            "path": "./assets/Dragon.png"
+        },
+        {
+            "name": "Gorilla",
+            "attack": 6,
+            "hp": 6,
+            "ability1": "Hurt: Gain Coconut Shield (no damage once)",
+            "ability2": "Hurt: Gain Coconut Shield (no damage once)",
+            "ability3": "Hurt: Gain Coconut Shield (no damage once)",
+            "path": "./assets/Gorilla.png"
+        },
+        {
+            "name": "Leopard",
+            "attack": 6,
+            "hp": 4,
+            "ability1": "Start of battle: Deal 50% Attack damage to a random enemy",
+            "ability2": "Start of battle: Deal 50% Attack damage to 2 random enemies",
+            "ability3": "Start of battle: Deal 50% Attack damage to 3 random enemies",
+            "path": "./assets/Leopard.png"
+        },
+        {
+            "name": "Mammoth",
+            "attack": 2,
+            "hp": 6,
+            "ability1": "Faint: Give all friends +2/+2",
+            "ability2": "Faint: Give all friends +4/+4",
+            "ability3": "Faint: Give all friends +6/+6",
+            "path": "./assets/Mammoth.png"
+        },
+        {
+            "name": "Octopus",
+            "attack": 8,
+            "hp": 8,
+            "ability1": "Level-up: Gain +8/+8",
+            "ability2": "Level-up: Gain +8/+8 and new ability",
+            "ability3": "Deal 5 damage to all enemies",
+            "path": "./assets/Octopus.png"
+        },
+        {
+            "name": "Sauropod",
+            "attack": 4,
+            "hp": 12,
+            "ability1": "Buy food: Gain 1 gold",
+            "ability2": "Buy food: Gain 1 gold",
+            "ability3": "Buy food: Gain 1 gold",
+            "path": "./assets/Sauropod.png"
+        },
+        {
+            "name": "Tyrannosaurus",
+            "attack": 9,
+            "hp": 4,
+            "ability1": "End turn: If you have 3 or more gold, give other friends +2/+2",
+            "ability2": "End turn: If you have 3 or more gold, give other friends +4/+4",
+            "ability3": "End turn: If you have 3 or more gold, give other friends +6/+6",
+            "path": "./assets/Tyrannosaurus.png"
         }
     ]
 }

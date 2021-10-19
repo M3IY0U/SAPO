@@ -1,6 +1,7 @@
-<h1>Super Auto Pets Overview</h1>
+<h1>Super Auto Pets</h1>
+<h2>Animals Overview</h2>
 
-<h2>Tier 1</h2>
+<h3>Tier 1</h3>
 <ul>
     {% for animal in site.data.animals.tier1 %}
         <li>
@@ -11,7 +12,7 @@
     {% endfor %}
 </ul>
 
-<h2>Tier 2</h2>
+<h3>Tier 2</h3>
 <ul>
     {% for animal in site.data.animals.tier2 %}
         <li>
@@ -22,13 +23,115 @@
     {% endfor %}
 </ul>
 
-<h2>Tier 3</h2>
+<h3>Tier 3</h3>
 <ul>
     {% for animal in site.data.animals.tier3 %}
         <li>
             {{ animal }}
             
             <img src="{{ animal.path }}" width="30px" style="vertical-align: middle;" alt="{{animal.name}}">
+        </li>
+    {% endfor %}
+</ul>
+
+<h3>Tier 4</h3>
+<ul>
+    {% for animal in site.data.animals.tier4 %}
+        <li>
+            {{ animal }}
+            
+            <img src="{{ animal.path }}" width="30px" style="vertical-align: middle;" alt="{{animal.name}}">
+        </li>
+    {% endfor %}
+</ul>
+
+<h3>Tier 5</h3>
+<ul>
+    {% for animal in site.data.animals.tier5 %}
+        <li>
+            {{ animal }}
+            
+            <img src="{{ animal.path }}" width="30px" style="vertical-align: middle;" alt="{{animal.name}}">
+        </li>
+    {% endfor %}
+</ul>
+
+<h3>Tier 6</h3>
+<ul>
+    {% for animal in site.data.animals.tier6 %}
+        <li>
+            {{ animal }}
+            
+            <img src="{{ animal.path }}" width="30px" style="vertical-align: middle;" alt="{{animal.name}}">
+        </li>
+    {% endfor %}
+</ul>
+
+<hr>
+
+<h2>Food Overview</h2>
+<h3>Tier 1</h3>
+<ul>
+    {% for food in site.data.foods.tier1 %}
+        <li>
+            {{ food }}
+            
+            <img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
+        </li>
+    {% endfor %}
+</ul>
+
+<h3>Tier 2</h3>
+<ul>
+    {% for food in site.data.foods.tier2 %}
+        <li>
+            {{ food }}
+            
+            <img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
+        </li>
+    {% endfor %}
+</ul>
+
+<h3>Tier 3</h3>
+<ul>
+    {% for food in site.data.foods.tier3 %}
+        <li>
+            {{ food }}
+            
+            <img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
+        </li>
+    {% endfor %}
+</ul>
+
+<h3>Tier 4</h3>
+<ul>
+    {% for food in site.data.foods.tier4 %}
+        <li>
+            {{ food }}
+            
+            <img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
+        </li>
+    {% endfor %}
+</ul>
+
+<h3>Tier 5</h3>
+<ul>
+    {% for food in site.data.foods.tier5 %}
+        <li>
+            {{ food }}
+            
+            <img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
+        </li>
+    {% endfor %}
+</ul>
+
+<h3>Tier 6</h3>
+<ul>
+    {% for food in site.data.foods.tier6 %}
+        <li>
+            {{ food }}
+            
+            <img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
         </li>
     {% endfor %}
 </ul>
