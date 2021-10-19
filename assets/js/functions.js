@@ -13,10 +13,16 @@ $(document).ready(function () {
 
 
     // Lightbox behaviour on animal click
-    $('img').click(function() {
+    $('.content').find('img').click(function() {
         var content = '<div class="animalcontainer">' + $(this).closest('.animalcontainer').html() + '</div>';
+        if (content == '<div class="animalcontainer">undefined</div>')
+            content = '<div class="foodcontainer">' + $(this).closest('.foodcontainer').html() + '</div>';
         $('.lightbox').html(content);
         $('.lightbox').addClass('show');
+    })
+    $('.lightbox').click(function(e) {
+        if(e.target !== e.currentTarget) return;
+        $(this).toggleClass('show');
     })
     
 });

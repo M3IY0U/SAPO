@@ -41,7 +41,7 @@
             "attack": 1,
             "hp": 2,
             "ability1": "Faint: Summon a 1/1 Cricket",
-            "ability2": "Faint: Summon a 3/3 Cricket",
+            "ability2": "Faint: Summon a 2/2 Cricket",
             "ability3": "Faint: Summon a 3/3 Cricket",
             "path": "./assets/img/cricket.png"
         },
