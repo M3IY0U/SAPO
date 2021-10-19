@@ -2,16 +2,19 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Super Auto pets</title>
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" />
+  <title>Super Auto Pets</title>
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | absolute_url }}" />
+  <script src="{{ '/assets/js/jquery-3.6.0.min.js' | absolute_url }}"></script>
+  <script src="{{ '/assets/js/functions.js' | absolute_url }}"></script>
+  
+  <link rel="shortcut icon" href="{{ '/assets/favicon.ico' | absolute_url }}" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-image: url({{ '/assets/img/sapo-background.png' | absolute_url }});background-repeat: repeat;">
   <section class="content">
     {{ content }}
   </section>
 
-  <script src="{{ '/assets/js/jquery-3.6.0.min.js' | relative_url }}"></script>
-  <script src="{{ '/assets/js/functions.js' | relative_url }}"></script>
 </body>
 </html>
