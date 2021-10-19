@@ -20,3 +20,40 @@ $(document).ready(function () {
     })
     
 });
+
+function search(params) {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("search");
+    filter = input.value.toUpperCase();
+    console.log(filter);
+    accordions = document.getElementsByClassName('accordion-content');
+    //console.log(accordions);
+
+    foundAcc = [];
+    console.log()
+
+
+    for (let acc of accordions) {
+        var animals = ([].slice.call(acc.getElementsByClassName("animal-headline"))).map(x=>x.innerText.toUpperCase());
+        
+        animals.forEach(element => {
+            if(element == filter)
+                foundAcc.push(acc);
+        });
+    }
+
+    foundAcc.forEach(a => {
+        a.classList.toggle('show'); 
+        $(a).slideToggle(600);
+    });
+
+    // for (i = 0; i < li.length; i++) {
+    //     a = li[i].getElementsByTagName("a")[0];
+    //     txtValue = a.textContent || a.innerText;
+    //     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    //         li[i].style.display = "";
+    //     } else {
+    //         li[i].style.display = "none";
+    //     }
+    // }
+}
