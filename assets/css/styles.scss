@@ -66,10 +66,10 @@
                 }
             }
             .attack {
-                background-image: url("{{ '/assets/img/StickerFist.png' | absolute_url }}");
+                background-image: url("{{ '/assets/img/stickerfist.png' | absolute_url }}");
             }
             .hp {
-                background-image: url("{{ '/assets/img/StickerHeart.png' | absolute_url }}");
+                background-image: url("{{ '/assets/img/stickerheart.png' | absolute_url }}");
             }
         }
         .animalabilities {
@@ -164,10 +164,10 @@
                         }
                     }
                     .attack {
-                        background-image: url("{{ '/assets/img/StickerFist.png' | absolute_url }}");
+                        background-image: url("{{ '/assets/img/stickerfist.png' | absolute_url }}");
                     }
                     .hp {
-                        background-image: url("{{ '/assets/img/StickerHeart.png' | absolute_url }}");
+                        background-image: url("{{ '/assets/img/stickerheart.png' | absolute_url }}");
                     }
                 }
                 .animalabilities {

@@ -3,92 +3,92 @@
         {
             "name": "Apple",
             "ability": "Give an animal +1/+1",
-            "path": "./assets/img/Apple.png"
+            "path": "./assets/img/apple.png"
         },
         {
             "name": "Honey",
             "ability": "Give an animal Faint: Summon 1/1 Honey Bee",
-            "path": "./assets/img/Honey.png"
+            "path": "./assets/img/honey.png"
         }
     ],
     "tier2": [
         {
             "name": "Cupcake",
             "ability": "Give an animal +3/+3 until end of battle",
-            "path": "./assets/img/Cupcake.png"
+            "path": "./assets/img/cupcake.png"
         },
         {
             "name": "Meat Bone",
             "ability": "Give an animal Bone Attack: 5 damage more on first attack",
-            "path": "./assets/img/BoneMeat.png"
+            "path": "./assets/img/bonemeat.png"
         },
         {
             "name": "Sleeping Pill",
             "ability": "Make friendly animal faint (this costs 1 Gold)",
-            "path": "./assets/img/Pill.png"
+            "path": "./assets/img/pill.png"
         }
     ],
     "tier3": [
         {
             "name": "Garlic",
             "ability": "Give an animal Garlic Armor (2 less Damage each time)",
-            "path": "./assets/img/Garlic.png"
+            "path": "./assets/img/garlic.png"
         },
         {
             "name": "Salad Bowl",
             "ability": "Give 2 random animals +1/+1",
-            "path": "./assets/img/SaladBowl.png"
+            "path": "./assets/img/saladbowl.png"
         }
     ],
     "tier4": [
         {
             "name": "Canned Food",
             "ability": "Give all current and future shop animals +2/+2",
-            "path": "./assets/img/CannedFood.png"
+            "path": "./assets/img/cannedfood.png"
         },
         {
             "name": "Pear",
             "ability": "Give animal +2/+2",
-            "path": "./assets/img/Pear.png"
+            "path": "./assets/img/pear.png"
         }
     ],
     "tier5": [
         {
             "name": "Chili",
             "ability": "Give an animal Splash Attack",
-            "path": "./assets/img/Chili.png"
+            "path": "./assets/img/chili.png"
         },
         {
             "name": "Chocolate",
             "ability": "Give animal +1 Experience",
-            "path": "./assets/img/Chocolate.png"
+            "path": "./assets/img/chocolate.png"
         },
         {
             "name": "Sushi",
             "ability": "Give 3 random animals +1/+1",
-            "path": "./assets/img/Sushi.png"
+            "path": "./assets/img/sushi.png"
         }
     ],
     "tier6": [
         {
             "name": "Melon",
             "ability": "Give an animal Melon Armor",
-            "path": "./assets/img/Melon.png"
+            "path": "./assets/img/melon.png"
         },
         {
             "name": "Mushroom",
             "ability": "Give animal Extra Life as a 1/1",
-            "path": "./assets/img/Mushroom.png"
+            "path": "./assets/img/mushroom.png"
         },
         {
             "name": "Pizza",
             "ability": "Give 2 random animals +2/+2",
-            "path": "./assets/img/Pizza.png"
+            "path": "./assets/img/pizza.png"
         },
         {
             "name": "Steak",
             "ability": "Give an animal 20 Steak Attack",
-            "path": "./assets/img/Steak.png"
+            "path": "./assets/img/steak.png"
         }
     ]
 }
