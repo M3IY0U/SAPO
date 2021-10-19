@@ -1,16 +1,21 @@
 <h1>Super Auto Pets</h1>
 <h2>Animals Overview</h2>
 
-<h3>Tier 1</h3>
-<ul>
-    {% for animal in site.data.animals.tier1 %}
-        <li>
-            {{ animal }}
-            
-            <img src="{{ animal.path }}" width="30px" style="vertical-align: middle;" alt="{{animal.name}}">
-        </li>
-    {% endfor %}
-</ul>
+<div class="accordion tier1">
+    <h3 class="toggler">Tier 1</h3>
+    <div class="accordion-content inactive">
+        <ul>
+            {% for animal in site.data.animals.tier1 %}
+                <li>
+                    {{ animal }}
+                    
+                    <img src="{{ animal.path }}" width="30px" style="vertical-align: middle;" alt="{{animal.name}}">
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
 
 <h3>Tier 2</h3>
 <ul>

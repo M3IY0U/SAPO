@@ -1,0 +1,12 @@
+.accordion {
+    .accordion-content {
+        transition: min-height .5s ease-in;
+        &.active {
+            min-height: auto;
+        }
+        &.inactive {
+            min-height: 0;
+        }    
+    }
+    
+}
