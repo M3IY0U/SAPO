@@ -5,35 +5,49 @@
     <h3 class="toggler">Tier 1</h3>
     <div class="accordion-content inactive">
         {% for animal in site.data.animals.tier1 %}
-        <div id="animalcontainer-tier1"
-            style="float: left; width: 174px;  height:174px; background-position: center center;background-repeat: no-repeat;background-size: cover;background-image: url('{{animal.path}}');">
-            {{animal.name}}
+        <div class="animalcontainer">
+            <p class="animal-headline">{{animal.name}}</p>
+            <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+            <div class="animalstats">
+                <span class="attack">{{animal.attack}}</span>
+                <span class="hp">{{animal.hp}}</span>
+            </div>
         </div>
         {% endfor %}
     </div>
 </div>
 
-<h3>Tier 2</h3>
-
-{% for animal in site.data.animals.tier2 %}
-
-<div id="animalcontainer-tier2"
-    style="float: left; width: 174px;  height:174px; background-position: center center;background-repeat: no-repeat;background-size: cover;background-image: url('{{animal.path}}');">
-    {{animal.name}}
+<div class="accordion tier2">
+    <h3 class="toggler">Tier 2</h3>
+    <div class="accordion-content inactive">
+        {% for animal in site.data.animals.tier2 %}
+        <div class="animalcontainer">
+            <p class="animal-headline">{{animal.name}}</p>
+            <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+            <div class="animalstats">
+                <span class="attack">{{animal.attack}}</span>
+                <span class="hp">{{animal.hp}}</span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
 
-{% endfor %}
-
-<h3>Tier 3</h3>
-
-{% for animal in site.data.animals.tier3 %}
-
-<div id="animalcontainer-tier3"
-    style="float: left; width: 174px;  height:174px; background-position: center center;background-repeat: no-repeat;background-size: cover;background-image: url('{{animal.path}}');">
-    {{animal.name}}
+<div class="accordion tier3">
+    <h3 class="toggler">Tier 3</h3>
+    <div class="accordion-content inactive">
+        {% for animal in site.data.animals.tier3 %}
+        <div class="animalcontainer">
+            <p class="animal-headline">{{animal.name}}</p>
+            <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+            <div class="animalstats">
+                <span class="attack">{{animal.attack}}</span>
+                <span class="hp">{{animal.hp}}</span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
-
-{% endfor %}
 
 <h3>Tier 4</h3>
 

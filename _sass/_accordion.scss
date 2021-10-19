@@ -1,11 +1,16 @@
 .accordion {
     .accordion-content {
-        transition: min-height .5s ease-in;
+        transition: max-height 2s;
+        overflow: hidden;
         &.active {
-            min-height: auto;
-        }
+            max-height: 9999px;
+        } 
         &.inactive {
-            min-height: 0;
+            max-height: 0;
+        }
+        .animalcontainer {
+            float: left;
+            width: 25%;
         }    
     }
     
