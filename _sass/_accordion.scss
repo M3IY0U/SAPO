@@ -53,6 +53,32 @@
                     max-width: 175px;
                     height: auto;
                 }
+                .animalstats {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    width: 70%;
+                    > div {
+                        flex: 0 0 50%;
+                        min-height: 50px;
+                    }
+                    .attack, .hp {
+                        background-repeat: no-repeat;
+                        background-size: 50px 50px;
+                        background-position: center;
+                        p {
+                            font-weight: bold;
+                            font-size: 25px;
+                            margin-top: 25px;
+                        }
+                    }
+                    .attack {
+                        background-image: url(/assets/img/stickerFist.png);
+                    }
+                    .hp {
+                        background-image: url(/assets/img/stickerHeart.png);
+                    }
+                }
             }
         }
     }
