@@ -4,139 +4,135 @@
 <div class="accordion tier1">
     <h3 class="toggler">Tier 1</h3>
     <div class="accordion-content inactive">
-        <ul>
-            {% for animal in site.data.animals.tier1 %}
-                <li>
-                    {{ animal }}
-                    
-                    <img src="{{ animal.path }}" width="30px" style="vertical-align: middle;" alt="{{animal.name}}">
-                </li>
-            {% endfor %}
-        </ul>
+        {% for animal in site.data.animals.tier1 %}
+        <div id="animalcontainer-tier1"
+            style="float: left; width: 174px;  height:174px; background-position: center center;background-repeat: no-repeat;background-size: cover;background-image: url('{{animal.path}}');">
+            {{animal.name}}
+        </div>
+        {% endfor %}
     </div>
 </div>
 
-
 <h3>Tier 2</h3>
-<ul>
-    {% for animal in site.data.animals.tier2 %}
-        <li>
-            {{ animal }}
-            
-            <img src="{{ animal.path }}" width="30px" style="vertical-align: middle;" alt="{{animal.name}}">
-        </li>
-    {% endfor %}
-</ul>
+
+{% for animal in site.data.animals.tier2 %}
+
+<div id="animalcontainer-tier2"
+    style="float: left; width: 174px;  height:174px; background-position: center center;background-repeat: no-repeat;background-size: cover;background-image: url('{{animal.path}}');">
+    {{animal.name}}
+</div>
+
+{% endfor %}
 
 <h3>Tier 3</h3>
-<ul>
-    {% for animal in site.data.animals.tier3 %}
-        <li>
-            {{ animal }}
-            
-            <img src="{{ animal.path }}" width="30px" style="vertical-align: middle;" alt="{{animal.name}}">
-        </li>
-    {% endfor %}
-</ul>
+
+{% for animal in site.data.animals.tier3 %}
+
+<div id="animalcontainer-tier3"
+    style="float: left; width: 174px;  height:174px; background-position: center center;background-repeat: no-repeat;background-size: cover;background-image: url('{{animal.path}}');">
+    {{animal.name}}
+</div>
+
+{% endfor %}
 
 <h3>Tier 4</h3>
-<ul>
-    {% for animal in site.data.animals.tier4 %}
-        <li>
-            {{ animal }}
-            
-            <img src="{{ animal.path }}" width="30px" style="vertical-align: middle;" alt="{{animal.name}}">
-        </li>
-    {% endfor %}
-</ul>
+
+{% for animal in site.data.animals.tier4 %}
+
+<div id="animalcontainer-tier4"
+    style="float: left; width: 174px;  height:174px; background-position: center center;background-repeat: no-repeat;background-size: cover;background-image: url('{{animal.path}}');">
+    {{animal.name}}
+</div>
+
+{% endfor %}
 
 <h3>Tier 5</h3>
-<ul>
-    {% for animal in site.data.animals.tier5 %}
-        <li>
-            {{ animal }}
-            
-            <img src="{{ animal.path }}" width="30px" style="vertical-align: middle;" alt="{{animal.name}}">
-        </li>
-    {% endfor %}
-</ul>
+
+{% for animal in site.data.animals.tier5 %}
+
+<div id="animalcontainer-tier5"
+    style="float: left; width: 174px;  height:174px; background-position: center center;background-repeat: no-repeat;background-size: cover;background-image: url('{{animal.path}}');">
+    {{animal.name}}
+</div>
+
+{% endfor %}
+
 
 <h3>Tier 6</h3>
-<ul>
-    {% for animal in site.data.animals.tier6 %}
-        <li>
-            {{ animal }}
-            
-            <img src="{{ animal.path }}" width="30px" style="vertical-align: middle;" alt="{{animal.name}}">
-        </li>
-    {% endfor %}
-</ul>
+
+{% for animal in site.data.animals.tier6 %}
+
+<div id="animalcontainer-tier6"
+    style="float: left; width: 174px;  height:174px; background-position: center center;background-repeat: no-repeat;background-size: cover;background-image: url('{{animal.path}}');">
+    {{animal.name}}
+</div>
+
+{% endfor %}
 
 <hr>
 
 <h2>Food Overview</h2>
 <h3>Tier 1</h3>
-<ul>
-    {% for food in site.data.foods.tier1 %}
-        <li>
-            {{ food }}
-            
-            <img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
-        </li>
-    {% endfor %}
-</ul>
+
+{% for food in site.data.foods.tier1 %}
+
+{{ food }}
+
+<img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
+
+{% endfor %}
+
 
 <h3>Tier 2</h3>
-<ul>
-    {% for food in site.data.foods.tier2 %}
-        <li>
-            {{ food }}
-            
-            <img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
-        </li>
-    {% endfor %}
-</ul>
+
+{% for food in site.data.foods.tier2 %}
+
+{{ food }}
+
+<img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
+
+{% endfor %}
+
 
 <h3>Tier 3</h3>
-<ul>
-    {% for food in site.data.foods.tier3 %}
-        <li>
-            {{ food }}
-            
-            <img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
-        </li>
-    {% endfor %}
-</ul>
+
+{% for food in site.data.foods.tier3 %}
+
+{{ food }}
+
+<img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
+
+{% endfor %}
+
 
 <h3>Tier 4</h3>
-<ul>
-    {% for food in site.data.foods.tier4 %}
-        <li>
-            {{ food }}
-            
-            <img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
-        </li>
-    {% endfor %}
-</ul>
+
+{% for food in site.data.foods.tier4 %}
+
+{{ food }}
+
+<img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
+
+{% endfor %}
+
 
 <h3>Tier 5</h3>
-<ul>
-    {% for food in site.data.foods.tier5 %}
-        <li>
-            {{ food }}
-            
-            <img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
-        </li>
-    {% endfor %}
-</ul>
+
+{% for food in site.data.foods.tier5 %}
+
+{{ food }}
+
+<img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
+
+{% endfor %}
+
 
 <h3>Tier 6</h3>
-<ul>
-    {% for food in site.data.foods.tier6 %}
-        <li>
-            {{ food }}
-            
-            <img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
-        </li>
-    {% endfor %}
-</ul>
+
+{% for food in site.data.foods.tier6 %}
+
+{{ food }}
+
+<img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
+
+{% endfor %}
