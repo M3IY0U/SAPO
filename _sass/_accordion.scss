@@ -33,12 +33,12 @@
                 display: block;
                 overflow: hidden;
                 text-align: center;
-                flex: 0 0 20%;
+                flex: 0 0 16.66%;
                 @include respond-below(lg) {
-                    flex: 0 0 25%;
+                    flex: 0 0 20%;
                 }
                 @include respond-below(md) {
-                    flex: 0 0 33.33%;
+                    flex: 0 0 25%;
                 }
                 @include respond-below(sm) {
                     flex: 0 0 100%;
@@ -50,6 +50,7 @@
                 }
                 img {
                     width: 80%;
+                    max-width: 175px;
                     height: auto;
                 }
             }
