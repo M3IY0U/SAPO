@@ -1,0 +1,38 @@
+body {
+    background-image: url(/assets/img/sapo-background.png);
+    background-repeat: repeat;
+
+    font-family: 'Montserrat';
+    font-size: $paragraph-font-size;
+    font-weight: 400;
+    color: white;
+    
+    margin-left: 0.9375rem !important;
+    margin-right: 0.9375rem !important;
+}
+h1, .h1 {
+    font-size: $h1-font-size;
+}
+h2, .h2 {
+    font-size: $h2-font-size;
+}
+h3, .h3 {
+    font-size: $h3-font-size;
+}
+h4, .h4 {
+    font-size: $h4-font-size;
+}
+h5, .h5 {
+    font-size: $h5-font-size;
+}
+h6, .h6 {
+    font-size: $h6-font-size;
+}
+
+section.content {
+    position: relative;
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}

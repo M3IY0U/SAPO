@@ -1,7 +1,7 @@
-$('.toggler').click(function(){
-    var el = $(this).next('.accordion-content');
-    if (el) {
-        el.toggleClass('inactive');
-        el.toggleClass('active');
-    }
+$(document).ready(function () {
+    $('.toggler').click(function () {
+        $(this).toggleClass('show');
+        $(this).next('.accordion-content').toggleClass('show'); 
+        $(this).next('.accordion-content').slideToggle(600);
+    });
 });

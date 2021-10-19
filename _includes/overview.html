@@ -1,152 +1,209 @@
 <h1>Super Auto Pets</h1>
 <h2>Animals Overview</h2>
 
-<div class="accordion tier1">
+<div class="accordion">
     <h3 class="toggler">Tier 1</h3>
-    <div class="accordion-content inactive">
-        {% for animal in site.data.animals.tier1 %}
-        <div class="animalcontainer">
-            <p class="animal-headline">{{animal.name}}</p>
-            <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
-            <div class="animalstats">
-                <span class="attack">{{animal.attack}}</span>
-                <span class="hp">{{animal.hp}}</span>
+    <div class="accordion-content">
+        <div class="animals">
+            {% for animal in site.data.animals.tier1 %}
+            <div class="animalcontainer">
+                <p class="animal-headline">{{animal.name}}</p>
+                <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                <div class="animalstats">
+                    <span class="attack">{{animal.attack}}</span>
+                    <span class="hp">{{animal.hp}}</span>
+                </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
 
-<div class="accordion tier2">
+<div class="accordion">
     <h3 class="toggler">Tier 2</h3>
-    <div class="accordion-content inactive">
-        {% for animal in site.data.animals.tier2 %}
-        <div class="animalcontainer">
-            <p class="animal-headline">{{animal.name}}</p>
-            <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
-            <div class="animalstats">
-                <span class="attack">{{animal.attack}}</span>
-                <span class="hp">{{animal.hp}}</span>
+    <div class="accordion-content">
+        <div class="animals">
+            {% for animal in site.data.animals.tier2 %}
+            <div class="animalcontainer">
+                <p class="animal-headline">{{animal.name}}</p>
+                <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                <div class="animalstats">
+                    <span class="attack">{{animal.attack}}</span>
+                    <span class="hp">{{animal.hp}}</span>
+                </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
 
-<div class="accordion tier3">
+<div class="accordion">
     <h3 class="toggler">Tier 3</h3>
-    <div class="accordion-content inactive">
-        {% for animal in site.data.animals.tier3 %}
-        <div class="animalcontainer">
-            <p class="animal-headline">{{animal.name}}</p>
-            <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
-            <div class="animalstats">
-                <span class="attack">{{animal.attack}}</span>
-                <span class="hp">{{animal.hp}}</span>
+    <div class="accordion-content">
+        <div class="animals">
+            {% for animal in site.data.animals.tier3 %}
+            <div class="animalcontainer">
+                <p class="animal-headline">{{animal.name}}</p>
+                <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                <div class="animalstats">
+                    <span class="attack">{{animal.attack}}</span>
+                    <span class="hp">{{animal.hp}}</span>
+                </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
 
-<h3>Tier 4</h3>
-
-{% for animal in site.data.animals.tier4 %}
-
-<div id="animalcontainer-tier4"
-    style="float: left; width: 174px;  height:174px; background-position: center center;background-repeat: no-repeat;background-size: cover;background-image: url('{{animal.path}}');">
-    {{animal.name}}
+<div class="accordion">
+    <h3 class="toggler">Tier 4</h3>
+    <div class="accordion-content">
+        <div class="animals">
+            {% for animal in site.data.animals.tier4 %}
+            <div class="animalcontainer">
+                <p class="animal-headline">{{animal.name}}</p>
+                <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                <div class="animalstats">
+                    <span class="attack">{{animal.attack}}</span>
+                    <span class="hp">{{animal.hp}}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 
-{% endfor %}
-
-<h3>Tier 5</h3>
-
-{% for animal in site.data.animals.tier5 %}
-
-<div id="animalcontainer-tier5"
-    style="float: left; width: 174px;  height:174px; background-position: center center;background-repeat: no-repeat;background-size: cover;background-image: url('{{animal.path}}');">
-    {{animal.name}}
+<div class="accordion">
+    <h3 class="toggler">Tier 5</h3>
+    <div class="accordion-content">
+        <div class="animals">
+            {% for animal in site.data.animals.tier5 %}
+            <div class="animalcontainer">
+                <p class="animal-headline">{{animal.name}}</p>
+                <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                <div class="animalstats">
+                    <span class="attack">{{animal.attack}}</span>
+                    <span class="hp">{{animal.hp}}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 
-{% endfor %}
-
-
-<h3>Tier 6</h3>
-
-{% for animal in site.data.animals.tier6 %}
-
-<div id="animalcontainer-tier6"
-    style="float: left; width: 174px;  height:174px; background-position: center center;background-repeat: no-repeat;background-size: cover;background-image: url('{{animal.path}}');">
-    {{animal.name}}
+<div class="accordion">
+    <h3 class="toggler">Tier 6</h3>
+    <div class="accordion-content">
+        <div class="animals">
+            {% for animal in site.data.animals.tier6 %}
+            <div class="animalcontainer">
+                <p class="animal-headline">{{animal.name}}</p>
+                <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                <div class="animalstats">
+                    <span class="attack">{{animal.attack}}</span>
+                    <span class="hp">{{animal.hp}}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 
-{% endfor %}
-
-<hr>
-
+<br>
 <h2>Food Overview</h2>
-<h3>Tier 1</h3>
 
-{% for food in site.data.foods.tier1 %}
+<div class="accordion">
+    <h3 class="toggler">Tier 1</h3>
+    <div class="accordion-content">
+        <div class="foods">
+            {% for food in site.data.foods.tier1 %}
+            <div class="foodcontainer">
+                <p class="food-headline">{{animal.name}}</p>
+                <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                <div class="foodstats">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
-{{ food }}
+<div class="accordion">
+    <h3 class="toggler">Tier 2</h3>
+    <div class="accordion-content">
+        <div class="foods">
+            {% for food in site.data.foods.tier2 %}
+            <div class="foodcontainer">
+                <p class="food-headline">{{animal.name}}</p>
+                <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                <div class="foodstats">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
-<img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
+<div class="accordion">
+    <h3 class="toggler">Tier 3</h3>
+    <div class="accordion-content">
+        <div class="foods">
+            {% for food in site.data.foods.tier3 %}
+            <div class="foodcontainer">
+                <p class="food-headline">{{animal.name}}</p>
+                <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                <div class="foodstats">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
-{% endfor %}
+<div class="accordion">
+    <h3 class="toggler">Tier 4</h3>
+    <div class="accordion-content">
+        <div class="foods">
+            {% for food in site.data.foods.tier4 %}
+            <div class="foodcontainer">
+                <p class="food-headline">{{animal.name}}</p>
+                <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                <div class="foodstats">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
+<div class="accordion">
+    <h3 class="toggler">Tier 5</h3>
+    <div class="accordion-content">
+        <div class="foods">
+            {% for food in site.data.foods.tier5 %}
+            <div class="foodcontainer">
+                <p class="food-headline">{{animal.name}}</p>
+                <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                <div class="foodstats">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
-<h3>Tier 2</h3>
-
-{% for food in site.data.foods.tier2 %}
-
-{{ food }}
-
-<img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
-
-{% endfor %}
-
-
-<h3>Tier 3</h3>
-
-{% for food in site.data.foods.tier3 %}
-
-{{ food }}
-
-<img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
-
-{% endfor %}
-
-
-<h3>Tier 4</h3>
-
-{% for food in site.data.foods.tier4 %}
-
-{{ food }}
-
-<img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
-
-{% endfor %}
-
-
-<h3>Tier 5</h3>
-
-{% for food in site.data.foods.tier5 %}
-
-{{ food }}
-
-<img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
-
-{% endfor %}
-
-
-<h3>Tier 6</h3>
-
-{% for food in site.data.foods.tier6 %}
-
-{{ food }}
-
-<img src="{{ food.path }}" width="30px" style="vertical-align: middle;" alt="{{food.name}}">
-
-{% endfor %}
+<div class="accordion">
+    <h3 class="toggler">Tier 6</h3>
+    <div class="accordion-content">
+        <div class="foods">
+            {% for food in site.data.foods.tier6 %}
+            <div class="foodcontainer">
+                <p class="food-headline">{{animal.name}}</p>
+                <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                <div class="foodstats">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

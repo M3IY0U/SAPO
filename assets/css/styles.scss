@@ -1,10 +1,8 @@
 ---
 ---
 
+@import "fonts";
 @import "config";
+@import "mixins";
+@import "layout";
 @import "accordion";
-
-
-body {
-    font-size: $h1-font-size;
-}
