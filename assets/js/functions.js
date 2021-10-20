@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Accordion expand and close
     $('.toggler').click(function () {
         $(this).toggleClass('show');
-        $(this).next('.accordion-content').toggleClass('show'); 
+        $(this).next('.accordion-content').toggleClass('show');
         $(this).next('.accordion-content').slideToggle(600);
     });
     // Expand first accordion by default
@@ -13,53 +13,60 @@ $(document).ready(function () {
 
 
     // Lightbox behaviour on animal click
-    $('.content').find('img').click(function() {
+    $('.content').find('img').click(function () {
         var content = '<div class="animalcontainer">' + $(this).closest('.animalcontainer').html() + '</div>';
         if (content == '<div class="animalcontainer">undefined</div>')
             content = '<div class="foodcontainer">' + $(this).closest('.foodcontainer').html() + '</div>';
         $('.lightbox').html(content);
         $('.lightbox').addClass('show');
     })
-    $('.lightbox').click(function(e) {
-        if(e.target !== e.currentTarget) return;
+    $('.lightbox').click(function (e) {
+        if (e.target !== e.currentTarget) return;
         $(this).toggleClass('show');
     })
-    
+
+    document.getElementById('search').addEventListener('keyup', function () {
+        this.classList.remove('error');
+        var containers = document.getElementsByClassName("animalcontainer");
+        for (var i = 0; i < containers.length; i++) {
+            containers.item(i).classList.remove('highlight');
+        }
+    })
+    document.getElementById('search').addEventListener('keyup', debounce((bla) => {
+        var search = document.getElementById('search').value;
+        toggleAndScrollTo(search.toLowerCase().replace(/\s/g, ''));
+    }, 1000));
+
 });
 
-function search(params) {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("search");
-    filter = input.value.toUpperCase();
-    console.log(filter);
-    accordions = document.getElementsByClassName('accordion-content');
-    //console.log(accordions);
+function debounce(callback, wait) {
+    let timeout;
+    return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(function () { callback.apply(this, args); }, wait);
+    }
+}
 
-    foundAcc = [];
-    console.log()
-
-
-    for (let acc of accordions) {
-        var animals = ([].slice.call(acc.getElementsByClassName("animal-headline"))).map(x=>x.innerText.toUpperCase());
-        
-        animals.forEach(element => {
-            if(element == filter)
-                foundAcc.push(acc);
-        });
+function toggleAndScrollTo(anchor) {
+    if (/[^a-zA-Z]+/.test(anchor) || anchor == "") {
+        $('#search').addClass('error');
+        return;
     }
 
-    foundAcc.forEach(a => {
-        a.classList.toggle('show'); 
-        $(a).slideToggle(600);
-    });
+    var anchorel = $('#' + anchor);
+    if (anchorel.length) {
+        var el = anchorel.closest('.accordion-content');
+        if (!el.hasClass('show')) {
+            el.toggleClass('show');
+            el.slideToggle(400);
+        }
+        anchorel.addClass('highlight');
+        $('html, body').animate({
+            scrollTop: anchorel.offset().top
+        }, 800);
+    }
+    else {
+        $('#search').addClass('error');
+    }
 
-    // for (i = 0; i < li.length; i++) {
-    //     a = li[i].getElementsByTagName("a")[0];
-    //     txtValue = a.textContent || a.innerText;
-    //     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-    //         li[i].style.display = "";
-    //     } else {
-    //         li[i].style.display = "none";
-    //     }
-    // }
 }

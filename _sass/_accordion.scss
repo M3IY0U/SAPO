@@ -20,6 +20,9 @@ noscript {
         background: #002645;
         padding: 10px;
         min-width: 400px;
+        @include respond-below(sm) {
+            min-width: 80%;
+        }
         .animalabilities,
         .foodabilities {
             display: block;
@@ -127,3 +130,15 @@ noscript {
         display: none;
     }
 }
+
+.foodcontainer {
+    img {
+        margin-bottom: 50px;
+    }
+}
+.animalcontainer.highlight,
+.foodcontainer.highlight {
+    background-color: rgba(0,0,0,.5);
+    border-radius: 25px;
+}
+

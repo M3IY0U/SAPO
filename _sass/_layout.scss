@@ -47,3 +47,12 @@ section.content {
 .mb-l {
     margin-bottom: 60px;
 }
+
+input[type="search"] {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: $h3-font-size;
+    margin-bottom: 50px;
+}
