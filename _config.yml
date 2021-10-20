@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Super Auto Pets Overview
-description: >- # this means to ignore newlines until "baseurl:"
+title: Super Auto Pets Overview - Unofficial Website
+description: This site aims to give a brief overview over the pets and mechanics in the game Super Auto Pets by teamwoodgames
   This site aims to give a brief overview over the pets and mechanics
   in the game Super Auto Pets.
 baseurl: "SAPO" # the subpath of your site, e.g. /blog

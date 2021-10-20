@@ -2,16 +2,25 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Super Auto Pets</title>
+  <meta name="generator" content="Jekyll &amp; Github">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <title>{{site.title}}</title>
+  <meta name="twitter:title" content="{{site.title}}">
+  <meta property="og:title" content="{{site.title}}">
+  <meta name="description" content="{{site.description}}">
+  <meta name="twitter:description" content="{{site.description}}">
+  <meta property="og:description" content="{{site.description}}">
+  <!--<link rel="canonical" href="https://www.superautopets.com">-->
+  <link rel="shortcut icon" href="{{ '/assets/favicon.ico' | absolute_url }}" type="image/x-icon">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | absolute_url }}" />
   <script src="{{ '/assets/js/jquery-3.6.0.min.js' | absolute_url }}"></script>
   <script src="{{ '/assets/js/functions.js' | absolute_url }}"></script>
-  
-  <link rel="shortcut icon" href="{{ '/assets/favicon.ico' | absolute_url }}" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <noscript><p class="center">You need to enable JavaScript to run this app.</p></noscript>
   <section class="content">
     {{ content }}
   </section>
