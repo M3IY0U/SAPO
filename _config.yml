@@ -20,12 +20,15 @@
 
 title: Super Auto Pets Overview - Unofficial Website
 description: This site aims to give a brief overview over the pets and mechanics in the game Super Auto Pets by teamwoodgames
-  This site aims to give a brief overview over the pets and mechanics
-  in the game Super Auto Pets.
+baseurl: "" # the subpath of your site, e.g. /blog
 baseurl: "SAPO" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: M3IY0U
 github_username:  M3IY0U
+
+about: This was a just-for-fun project to offer a basic overview to animals and updates to a game we liked.
+mail: foo@foo.de
+github: https://github.com/M3IY0U/SAPO
 
 # Build settings
 # theme: minima

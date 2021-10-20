@@ -1,58 +1,70 @@
 body {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-size: $paragraph-font-size;
     font-weight: 400;
     color: white;
 
-    margin-left: 0.9375rem !important;
-    margin-right: 0.9375rem !important;
-}
-h1, .h1 {
-    font-size: $h1-font-size;
-}
-h2, .h2 {
-    font-size: $h2-font-size;
-}
-h3, .h3 {
-    font-size: $h3-font-size;
-}
-h4, .h4 {
-    font-size: $h4-font-size;
-}
-h5, .h5 {
-    font-size: $h5-font-size;
-}
-h6, .h6 {
-    font-size: $h6-font-size;
+    margin: 0;
 }
 
 section.content {
     position: relative;
-    max-width: 1400px;
+    width: 98%;
+    margin: 0 auto 60px;
+    .inside {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+section.footer {
+    position: relative;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
+    background-color: #002645;
+    .inside {
+        max-width: 1400px;
+        min-height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        div {
+            flex: 0 0 33.33%;
+            a {
+                color: white;
+                display: block;
+                clear: both;
+                transition: all 0.5s;
 
-.center {
-    text-align: center;
-}
+                &:hover {
+                    color: orange;
+                }
+            }
+        }
+        #totop {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -20px;
 
-.mb-s {
-    margin-bottom: 20px;
-}
-.mb-m {
-    margin-bottom: 40px;
-}
-.mb-l {
-    margin-bottom: 60px;
-}
+            font-size: 30px;
+            color: white;
+            opacity: 0.8;
+            transition: All 0.3s ease;
+            text-decoration: none;
 
-input[type="search"] {
-    width: 100%;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: $h3-font-size;
-    margin-bottom: 50px;
+            background: rgba(0, 28, 51, 1);
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            padding: 5px 15px;
+
+            &:hover {
+                cursor: pointer;
+                color: orange;
+                opacity: 1;
+            }
+        }
+    }
 }

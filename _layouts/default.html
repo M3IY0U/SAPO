@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="Jekyll &amp; Github">
@@ -20,11 +21,30 @@
 </head>
 
 <body>
-  <noscript><p class="center">You need to enable JavaScript to run this app.</p></noscript>
+  <noscript>
+    <p class="center">You need to enable JavaScript to run this app.</p>
+  </noscript>
   <section class="content">
-    {{ content }}
+    <div class="inside">
+      {{ content }}
+    </div>
+  </section>
+  <section class="footer">
+    <div class="inside">
+      <a id="totop">&#x21e7;</a>
+      <div class="about">{{site.about}}</div>
+      <div class="contact">
+        <a href="mailto:{{site.mail}}" class="mail">{{site.mail}}</a>
+        <a href="{{site.github}}" class="git" target="_blank">{{site.github}}</a>
+      </div>
+      <div class="links">
+        <a title="Imprint" href="/imprint">Imprint</a>
+        <a title="Privacy Policy" href="/data-security">Privacy Policy</a>
+      </div>
+    </div>
   </section>
   <div class="lightbox"></div>
 
 </body>
+
 </html>

@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     // Accordion expand and close
     $('.toggler').click(function () {
@@ -25,6 +26,14 @@ $(document).ready(function () {
         $(this).toggleClass('show');
     })
 
+    // ScrollToTop
+    $("#totop").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".content").offset().top
+        }, 800);
+    });
+
+    // Search
     document.getElementById('search').addEventListener('keyup', function () {
         this.classList.remove('error');
         var containers = document.getElementsByClassName("animalcontainer");
@@ -36,6 +45,7 @@ $(document).ready(function () {
         var search = document.getElementById('search').value;
         toggleAndScrollTo(search.toLowerCase().replace(/\s/g, ''));
     }, 1000));
+
 
 });
 
