@@ -28,7 +28,7 @@ noscript {
         border-radius: 10px;
         max-width: 0;
         max-height: 0;
-        transition: all 1s;
+        transition: all .5s;
         min-width: 400px;
         @include respond-below(sm) {
             min-width: 80%;

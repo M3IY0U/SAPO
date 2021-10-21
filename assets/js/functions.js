@@ -1,12 +1,13 @@
 
 $(document).ready(function () {
-    // Accordion expand and close
+    // ========== ACCORDION ==========
+    // expand and close
     $('.toggler').click(function () {
         $(this).toggleClass('show');
         $(this).next('.accordion-content').toggleClass('show');
         $(this).next('.accordion-content').slideToggle(600);
     });
-    // Expand first accordion by default
+    // expand first by default
     var elanimal = $('.animals').find('.toggler:first');
     var elfood = $('.foods').find('.toggler:first');
     elanimal.toggleClass('show');
@@ -17,52 +18,72 @@ $(document).ready(function () {
     elfood.next('.accordion-content').slideToggle(600);
 
 
-    // Lightbox behaviour on animal click
+    // ========== LIGHTBOX ==========
+    // open on animal click in accordion
     $('.accordion').find('img').click(function () {
         var content = '<div class="animalcontainer">' + $(this).closest('.animalcontainer').html() + '</div>';
         if (content == '<div class="animalcontainer">undefined</div>') {
             content = '<div class="foodcontainer">' + $(this).closest('.foodcontainer').html() + '</div>';
-        } 
-        $('.lightbox').html(content);
-        $('.lightbox').addClass('show');
-        setTimeout(function() { 
-            $('.lightbox').find('.animalcontainer').addClass('show');
-            $('.lightbox').find('.foodcontainer').addClass('show');
-        }, 100);
-    })
-    $('.lightbox').click(function (e) {
-        if (e.target !== e.currentTarget) return;
-        $('.lightbox').find('.animalcontainer').removeClass('show');
-        $('.lightbox').find('.foodcontainer').removeClass('show');
-        setTimeout(function() { 
-            $('.lightbox').toggleClass('show');
-        }, 1000);
-        
-    })
-
-    // ScrollToTop
-    $("#totop").click(function() {
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $(".content").offset().top
-        }, 800);
-    });
-
-    // Search
-    document.getElementById('search').addEventListener('keyup', function () {
-        this.classList.remove('error');
-        var containers = document.getElementsByClassName("animalcontainer");
-        for (var i = 0; i < containers.length; i++) {
-            containers.item(i).classList.remove('highlight');
         }
+        $('.lightbox').html(content);
+        $('.lightbox').toggleClass('show disabled');
+        setTimeout(function () {
+            $('.lightbox').find('.animalcontainer').toggleClass('show');
+            $('.lightbox').find('.foodcontainer').toggleClass('show');
+        }, 100);
+        setTimeout(function () {
+            $('.lightbox').toggleClass('disabled');
+        }, 500);
+
+
     })
+    // close on click aside
+    $('.lightbox').click(function (e) {
+        if (e.target !== e.currentTarget || $(this).hasClass('disabled')) return;
+        $('.lightbox').toggleClass('disabled');
+        $('.lightbox').find('.animalcontainer').toggleClass('show');
+        $('.lightbox').find('.foodcontainer').toggleClass('show');
+        setTimeout(function () {
+            $('.lightbox').toggleClass('show');
+            $('.lightbox').toggleClass('disabled');
+        }, 500);
+    })
+
+
+    // ========== SEARCH ==========
+    // highlighting and error handling
+    $('#search').keyup(function () {
+        $('#search').removeClass('error');
+        removeHighlightings();
+    });
+    $('#search').click(function () {
+        removeHighlightings();
+    });
+    $('.accordion').find('img').click(function () {
+        removeHighlightings();
+    });
+    // Search
     document.getElementById('search').addEventListener('keyup', debounce((bla) => {
         var search = document.getElementById('search').value;
         toggleAndScrollTo(search.toLowerCase().replace(/\s/g, ''));
     }, 1000));
 
 
+    // ========== TOTOP ==========
+    $("#totop").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".content").offset().top
+        }, 800);
+    });
+
 });
 
+function removeHighlightings() {
+    var containers = document.getElementsByClassName("animalcontainer");
+    for (var i = 0; i < containers.length; i++) {
+        containers.item(i).classList.remove('highlight');
+    }
+}
 function debounce(callback, wait) {
     let timeout;
     return (...args) => {
@@ -103,7 +124,7 @@ function toggleAndScrollTo(anchor) {
 function hideMobileKeyboard(element) {
     element.attr('readonly', 'readonly'); // Force keyboard to hide on input field.
     element.attr('disabled', 'true'); // Force keyboard to hide on textarea field.
-    setTimeout(function() {
+    setTimeout(function () {
         element.blur();  //actually close the keyboard
         // Remove readonly attribute after keyboard is hidden.
         element.removeAttr('readonly');
