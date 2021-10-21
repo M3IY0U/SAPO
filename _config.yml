@@ -24,11 +24,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 baseurl: "SAPO" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: M3IY0U
-github_username:  M3IY0U
+github1_username: M3IY0U
+github2_username: sleightlyclueless
+github1: https://github.com/M3IY0U
+github2: https://github.com/sleightlyclueless
+mail: contact@superautopets.com
 
-about: This was a just-for-fun project to offer a basic overview to animals and updates to a game we liked.
-mail: foo@foo.de
-github: https://github.com/M3IY0U/SAPO
 
 # Build settings
 # theme: minima

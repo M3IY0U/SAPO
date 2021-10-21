@@ -24,22 +24,36 @@ section.footer {
     background-color: #002645;
     .inside {
         max-width: 1400px;
-        min-height: 200px;
         margin-left: auto;
         margin-right: auto;
-        padding: 50px 10px;
+        padding: 50px 1%;
         display: flex;
         flex-wrap: wrap;
         div {
-            flex: 0 0 33.33%;
+            flex: 0 0 48%;
+            margin-top: 25px;
+            padding-right: 2%;
+            .headline {
+                font-size: $h4-font-size;
+                margin-bottom: 10px;
+            }
+            @include respond-below(sm) {
+                flex: 0 0 96%;
+            }
+            p {
+                margin: 0;
+            }
             a {
                 color: white;
-                display: block;
-                clear: both;
                 transition: all 0.5s;
-
                 &:hover {
                     color: orange;
+                }
+            }
+            &.links {
+                a {
+                    display: block;
+                    clear: both;
                 }
             }
         }

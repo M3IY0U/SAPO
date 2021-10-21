@@ -7,23 +7,37 @@ $(document).ready(function () {
         $(this).next('.accordion-content').slideToggle(600);
     });
     // Expand first accordion by default
-    var el = $('.toggler').first();
-    el.toggleClass('show');
-    el.next('.accordion-content').toggleClass('show');
-    el.next('.accordion-content').slideToggle(600);
+    var elanimal = $('.animals').find('.toggler:first');
+    var elfood = $('.foods').find('.toggler:first');
+    elanimal.toggleClass('show');
+    elanimal.next('.accordion-content').toggleClass('show');
+    elanimal.next('.accordion-content').slideToggle(600);
+    elfood.toggleClass('show');
+    elfood.next('.accordion-content').toggleClass('show');
+    elfood.next('.accordion-content').slideToggle(600);
 
 
     // Lightbox behaviour on animal click
-    $('.content').find('img').click(function () {
+    $('.accordion').find('img').click(function () {
         var content = '<div class="animalcontainer">' + $(this).closest('.animalcontainer').html() + '</div>';
-        if (content == '<div class="animalcontainer">undefined</div>')
+        if (content == '<div class="animalcontainer">undefined</div>') {
             content = '<div class="foodcontainer">' + $(this).closest('.foodcontainer').html() + '</div>';
+        } 
         $('.lightbox').html(content);
         $('.lightbox').addClass('show');
+        setTimeout(function() { 
+            $('.lightbox').find('.animalcontainer').addClass('show');
+            $('.lightbox').find('.foodcontainer').addClass('show');
+        }, 100);
     })
     $('.lightbox').click(function (e) {
         if (e.target !== e.currentTarget) return;
-        $(this).toggleClass('show');
+        $('.lightbox').find('.animalcontainer').removeClass('show');
+        $('.lightbox').find('.foodcontainer').removeClass('show');
+        setTimeout(function() { 
+            $('.lightbox').toggleClass('show');
+        }, 1000);
+        
     })
 
     // ScrollToTop
@@ -58,7 +72,10 @@ function debounce(callback, wait) {
 }
 
 function toggleAndScrollTo(anchor) {
-    if (/[^a-zA-Z]+/.test(anchor) || anchor == "") {
+    if (anchor == "") {
+        return;
+    }
+    if (/[^a-zA-Z]+/.test(anchor)) {
         $('#search').addClass('error');
         return;
     }
@@ -75,6 +92,7 @@ function toggleAndScrollTo(anchor) {
             scrollTop: anchorel.offset().top
         }, 800);
         hideMobileKeyboard($('#search'));
+        $('#search').val('');
     }
     else {
         $('#search').addClass('error');

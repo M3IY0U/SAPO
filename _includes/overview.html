@@ -3,164 +3,166 @@
 <input type="search" name="search" id="search">
 
 <h2>Animals Overview</h2>
-<div class="accordion">
-    <h3 class="toggler">Tier 1</h3>
-    <div class="accordion-content">
-        <div class="animals">
-            {% for animal in site.data.animals.tier1 %}
-            <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
-                <p class="animal-headline">{{animal.name}}</p>
-                <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
-                <div class="animalstats">
-                    <div class="attack">
-                        <p>{{animal.attack}}</p>
+<div class="animals">
+    <div class="accordion">
+        <h3 class="toggler">Tier 1</h3>
+        <div class="accordion-content">
+            <div class="animals">
+                {% for animal in site.data.animals.tier1 %}
+                <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
+                    <p class="animal-headline">{{animal.name}}</p>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                    <div class="animalstats">
+                        <div class="attack">
+                            <p>{{animal.attack}}</p>
+                        </div>
+                        <div class="hp">
+                            <p>{{animal.hp}}</p>
+                        </div>
                     </div>
-                    <div class="hp">
-                        <p>{{animal.hp}}</p>
+                    <div class="animalabilities">
+                        <p>Lvl. 1: {{animal.ability1}}</p>
+                        <p>Lvl. 2: {{animal.ability2}}</p>
+                        <p>Lvl. 3: {{animal.ability3}}</p>
                     </div>
                 </div>
-                <div class="animalabilities">
-                    <p>Lvl. 1: {{animal.ability1}}</p>
-                    <p>Lvl. 2: {{animal.ability2}}</p>
-                    <p>Lvl. 3: {{animal.ability3}}</p>
-                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
-</div>
 
-<div class="accordion">
-    <h3 class="toggler">Tier 2</h3>
-    <div class="accordion-content">
-        <div class="animals">
-            {% for animal in site.data.animals.tier2 %}
-            <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
-                <p class="animal-headline">{{animal.name}}</p>
-                <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
-                <div class="animalstats">
-                    <div class="attack">
-                        <p>{{animal.attack}}</p>
+    <div class="accordion">
+        <h3 class="toggler">Tier 2</h3>
+        <div class="accordion-content">
+            <div class="animals">
+                {% for animal in site.data.animals.tier2 %}
+                <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
+                    <p class="animal-headline">{{animal.name}}</p>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                    <div class="animalstats">
+                        <div class="attack">
+                            <p>{{animal.attack}}</p>
+                        </div>
+                        <div class="hp">
+                            <p>{{animal.hp}}</p>
+                        </div>
                     </div>
-                    <div class="hp">
-                        <p>{{animal.hp}}</p>
+                    <div class="animalabilities">
+                        <p>Lvl. 1: {{animal.ability1}}</p>
+                        <p>Lvl. 2: {{animal.ability2}}</p>
+                        <p>Lvl. 3: {{animal.ability3}}</p>
                     </div>
                 </div>
-                <div class="animalabilities">
-                    <p>Lvl. 1: {{animal.ability1}}</p>
-                    <p>Lvl. 2: {{animal.ability2}}</p>
-                    <p>Lvl. 3: {{animal.ability3}}</p>
-                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
-</div>
 
-<div class="accordion">
-    <h3 class="toggler">Tier 3</h3>
-    <div class="accordion-content">
-        <div class="animals">
-            {% for animal in site.data.animals.tier3 %}
-            <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
-                <p class="animal-headline">{{animal.name}}</p>
-                <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
-                <div class="animalstats">
-                    <div class="attack">
-                        <p>{{animal.attack}}</p>
+    <div class="accordion">
+        <h3 class="toggler">Tier 3</h3>
+        <div class="accordion-content">
+            <div class="animals">
+                {% for animal in site.data.animals.tier3 %}
+                <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
+                    <p class="animal-headline">{{animal.name}}</p>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                    <div class="animalstats">
+                        <div class="attack">
+                            <p>{{animal.attack}}</p>
+                        </div>
+                        <div class="hp">
+                            <p>{{animal.hp}}</p>
+                        </div>
                     </div>
-                    <div class="hp">
-                        <p>{{animal.hp}}</p>
+                    <div class="animalabilities">
+                        <p>Lvl. 1: {{animal.ability1}}</p>
+                        <p>Lvl. 2: {{animal.ability2}}</p>
+                        <p>Lvl. 3: {{animal.ability3}}</p>
                     </div>
                 </div>
-                <div class="animalabilities">
-                    <p>Lvl. 1: {{animal.ability1}}</p>
-                    <p>Lvl. 2: {{animal.ability2}}</p>
-                    <p>Lvl. 3: {{animal.ability3}}</p>
-                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
-</div>
 
-<div class="accordion">
-    <h3 class="toggler">Tier 4</h3>
-    <div class="accordion-content">
-        <div class="animals">
-            {% for animal in site.data.animals.tier4 %}
-            <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
-                <p class="animal-headline">{{animal.name}}</p>
-                <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
-                <div class="animalstats">
-                    <div class="attack">
-                        <p>{{animal.attack}}</p>
+    <div class="accordion">
+        <h3 class="toggler">Tier 4</h3>
+        <div class="accordion-content">
+            <div class="animals">
+                {% for animal in site.data.animals.tier4 %}
+                <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
+                    <p class="animal-headline">{{animal.name}}</p>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                    <div class="animalstats">
+                        <div class="attack">
+                            <p>{{animal.attack}}</p>
+                        </div>
+                        <div class="hp">
+                            <p>{{animal.hp}}</p>
+                        </div>
                     </div>
-                    <div class="hp">
-                        <p>{{animal.hp}}</p>
+                    <div class="animalabilities">
+                        <p>Lvl. 1: {{animal.ability1}}</p>
+                        <p>Lvl. 2: {{animal.ability2}}</p>
+                        <p>Lvl. 3: {{animal.ability3}}</p>
                     </div>
                 </div>
-                <div class="animalabilities">
-                    <p>Lvl. 1: {{animal.ability1}}</p>
-                    <p>Lvl. 2: {{animal.ability2}}</p>
-                    <p>Lvl. 3: {{animal.ability3}}</p>
-                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
-</div>
 
-<div class="accordion">
-    <h3 class="toggler">Tier 5</h3>
-    <div class="accordion-content">
-        <div class="animals">
-            {% for animal in site.data.animals.tier5 %}
-            <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
-                <p class="animal-headline">{{animal.name}}</p>
-                <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
-                <div class="animalstats">
-                    <div class="attack">
-                        <p>{{animal.attack}}</p>
+    <div class="accordion">
+        <h3 class="toggler">Tier 5</h3>
+        <div class="accordion-content">
+            <div class="animals">
+                {% for animal in site.data.animals.tier5 %}
+                <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
+                    <p class="animal-headline">{{animal.name}}</p>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                    <div class="animalstats">
+                        <div class="attack">
+                            <p>{{animal.attack}}</p>
+                        </div>
+                        <div class="hp">
+                            <p>{{animal.hp}}</p>
+                        </div>
                     </div>
-                    <div class="hp">
-                        <p>{{animal.hp}}</p>
+                    <div class="animalabilities">
+                        <p>Lvl. 1: {{animal.ability1}}</p>
+                        <p>Lvl. 2: {{animal.ability2}}</p>
+                        <p>Lvl. 3: {{animal.ability3}}</p>
                     </div>
                 </div>
-                <div class="animalabilities">
-                    <p>Lvl. 1: {{animal.ability1}}</p>
-                    <p>Lvl. 2: {{animal.ability2}}</p>
-                    <p>Lvl. 3: {{animal.ability3}}</p>
-                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
-</div>
 
-<div class="accordion">
-    <h3 class="toggler">Tier 6</h3>
-    <div class="accordion-content">
-        <div class="animals">
-            {% for animal in site.data.animals.tier6 %}
-            <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
-                <p class="animal-headline">{{animal.name}}</p>
-                <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
-                <div class="animalstats">
-                    <div class="attack">
-                        <p>{{animal.attack}}</p>
+    <div class="accordion">
+        <h3 class="toggler">Tier 6</h3>
+        <div class="accordion-content">
+            <div class="animals">
+                {% for animal in site.data.animals.tier6 %}
+                <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
+                    <p class="animal-headline">{{animal.name}}</p>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                    <div class="animalstats">
+                        <div class="attack">
+                            <p>{{animal.attack}}</p>
+                        </div>
+                        <div class="hp">
+                            <p>{{animal.hp}}</p>
+                        </div>
                     </div>
-                    <div class="hp">
-                        <p>{{animal.hp}}</p>
+                    <div class="animalabilities">
+                        <p>Lvl. 1: {{animal.ability1}}</p>
+                        <p>Lvl. 2: {{animal.ability2}}</p>
+                        <p>Lvl. 3: {{animal.ability3}}</p>
                     </div>
                 </div>
-                <div class="animalabilities">
-                    <p>Lvl. 1: {{animal.ability1}}</p>
-                    <p>Lvl. 2: {{animal.ability2}}</p>
-                    <p>Lvl. 3: {{animal.ability3}}</p>
-                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
 </div>
@@ -168,105 +170,107 @@
 <br>
 <h2>Food Overview</h2>
 
-<div class="accordion">
-    <h3 class="toggler">Tier 1</h3>
-    <div class="accordion-content">
-        <div class="foods">
-            {% for food in site.data.foods.tier1 %}
-            <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
-                <p class="food-headline">{{food.name}}</p>
-                <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
-                <div class="foodabilities">
-                    <p>{{food.ability}}</p>
+<div class="foods">
+    <div class="accordion">
+        <h3 class="toggler">Tier 1</h3>
+        <div class="accordion-content">
+            <div class="foods">
+                {% for food in site.data.foods.tier1 %}
+                <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
+                    <p class="food-headline">{{food.name}}</p>
+                    <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                    <div class="foodabilities">
+                        <p>{{food.ability}}</p>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
-</div>
 
-<div class="accordion">
-    <h3 class="toggler">Tier 2</h3>
-    <div class="accordion-content">
-        <div class="foods">
-            {% for food in site.data.foods.tier2 %}
-            <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
-                <p class="food-headline">{{food.name}}</p>
-                <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
-                <div class="foodabilities">
-                    <p>{{food.ability}}</p>
+    <div class="accordion">
+        <h3 class="toggler">Tier 2</h3>
+        <div class="accordion-content">
+            <div class="foods">
+                {% for food in site.data.foods.tier2 %}
+                <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
+                    <p class="food-headline">{{food.name}}</p>
+                    <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                    <div class="foodabilities">
+                        <p>{{food.ability}}</p>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
-</div>
 
-<div class="accordion">
-    <h3 class="toggler">Tier 3</h3>
-    <div class="accordion-content">
-        <div class="foods">
-            {% for food in site.data.foods.tier3 %}
-            <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
-                <p class="food-headline">{{food.name}}</p>
-                <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
-                <div class="foodabilities">
-                    <p>{{food.ability}}</p>
+    <div class="accordion">
+        <h3 class="toggler">Tier 3</h3>
+        <div class="accordion-content">
+            <div class="foods">
+                {% for food in site.data.foods.tier3 %}
+                <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
+                    <p class="food-headline">{{food.name}}</p>
+                    <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                    <div class="foodabilities">
+                        <p>{{food.ability}}</p>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
-</div>
 
-<div class="accordion">
-    <h3 class="toggler">Tier 4</h3>
-    <div class="accordion-content">
-        <div class="foods">
-            {% for food in site.data.foods.tier4 %}
-            <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
-                <p class="food-headline">{{food.name}}</p>
-                <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
-                <div class="foodabilities">
-                    <p>{{food.ability}}</p>
+    <div class="accordion">
+        <h3 class="toggler">Tier 4</h3>
+        <div class="accordion-content">
+            <div class="foods">
+                {% for food in site.data.foods.tier4 %}
+                <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
+                    <p class="food-headline">{{food.name}}</p>
+                    <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                    <div class="foodabilities">
+                        <p>{{food.ability}}</p>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
-</div>
 
-<div class="accordion">
-    <h3 class="toggler">Tier 5</h3>
-    <div class="accordion-content">
-        <div class="foods">
-            {% for food in site.data.foods.tier5 %}
-            <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
-                <p class="food-headline">{{food.name}}</p>
-                <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
-                <div class="foodabilities">
-                    <p>{{food.ability}}</p>
+    <div class="accordion">
+        <h3 class="toggler">Tier 5</h3>
+        <div class="accordion-content">
+            <div class="foods">
+                {% for food in site.data.foods.tier5 %}
+                <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
+                    <p class="food-headline">{{food.name}}</p>
+                    <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                    <div class="foodabilities">
+                        <p>{{food.ability}}</p>
+                    </div>
                 </div>
-            </div>
 
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
     </div>
-</div>
 
-<div class="accordion">
-    <h3 class="toggler">Tier 6</h3>
-    <div class="accordion-content">
-        <div class="foods">
-            {% for food in site.data.foods.tier6 %}
-            <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
-                <p class="food-headline">{{food.name}}</p>
-                <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
-                <div class="foodabilities">
-                    <p>{{food.ability}}</p>
+    <div class="accordion">
+        <h3 class="toggler">Tier 6</h3>
+        <div class="accordion-content">
+            <div class="foods">
+                {% for food in site.data.foods.tier6 %}
+                <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
+                    <p class="food-headline">{{food.name}}</p>
+                    <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                    <div class="foodabilities">
+                        <p>{{food.ability}}</p>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
 </div>
