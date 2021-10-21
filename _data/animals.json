@@ -90,7 +90,8 @@
             "ability1": "Start of battle: Make 1 enemy Weak",
             "ability2": "Start of battle: Make 2 enemies Weak",
             "ability3": "Start of battle: Make 2 enemies Weak",
-            "path": "./assets/img/bat.png"
+            "path": "./assets/img/bat.png",
+            "special" : "weak"
         },
         {
             "name": "Dog",
@@ -144,7 +145,8 @@
             "ability1": "Faint: Summon one 1/1 Dirty Rat for the opponent that betrays him (1 Damage to front animal on attack)",
             "ability2": "Faint: Summon one 1/1 Dirty Rat for the opponent that betrays him (1 Damage to front animal on attack)",
             "ability3": "Faint: Summon one 1/1 Dirty Rat for the opponent that betrays him (1 Damage to front animal on attack)",
-            "path": "./assets/img/rat.png"
+            "path": "./assets/img/rat.png",
+            "special" : "dirtyrat"
         },
         {
             "name": "Shrimp",
@@ -200,7 +202,8 @@
             "ability1": "Start of turn: Gain 1 Experience",
             "ability2": "Start of turn: Gain 1 Experience",
             "ability3": "Start of battle: Evolve into a Butterfly (Copy stats of highest friend on field)",
-            "path": "./assets/img/caterpillar.png"
+            "path": "./assets/img/caterpillar.png",
+            "special" : "catterpillar"
         },
         {
             "name": "Hatching Chick",
@@ -245,7 +248,8 @@
             "ability1": "Faint: Summon two 2/2 Rams",
             "ability2": "Faint: Summon two 4/4 Rams",
             "ability3": "Faint: Summon two 6/6 Rams",
-            "path": "./assets/img/sheep.png"
+            "path": "./assets/img/sheep.png",
+            "special" : "ram"
         },
         {
             "name": "Snail",
@@ -272,7 +276,8 @@
             "ability1": "Give friend behind Melon Armor",
             "ability2": "Give 2 friends behind Melon Armor",
             "ability3": "Give 3 friends behind Melon Armor",
-            "path": "./assets/img/turtle.png"
+            "path": "./assets/img/turtle.png",
+            "special" : "melonarmor"
         }
     ],
     "tier4": [
@@ -301,7 +306,8 @@
             "ability1": "Faint: Summon a 5/5 Bus with Splash Attack",
             "ability2": "Faint: Summon a 10/10 Bus with Splash Attack",
             "ability3": "Faint: Summon a 15/15 Bus with Splash Attack",
-            "path": "./assets/img/deer.png"
+            "path": "./assets/img/deer.png",
+            "special" : "bus"
         },
         {
             "name": "Llama",
@@ -375,7 +381,8 @@
             "ability1": "Buy tier 1 animal: Give current and future shop animals +1/+1",
             "ability2": "Buy tier 1 animal: Give current and future shop animals +2/+2",
             "ability3": "Buy tier 1 animal: Give current and future shop animals +3/+3",
-            "path": "./assets/img/chicken.png"
+            "path": "./assets/img/chicken.png",
+            "special" : "chick"
         },
         {
             "name": "Cow",
@@ -384,7 +391,8 @@
             "ability1": "Buy: Replace food shop with 2 free milk that gives +2/+2",
             "ability2": "Buy: Replace food shop with 2 free milk that gives +2/+2",
             "ability3": "Buy: Replace food shop with 2 free milk that gives +2/+2",
-            "path": "./assets/img/cow.png"
+            "path": "./assets/img/cow.png",
+            "special" : "milk"
         },
         {
             "name": "Eagle",
@@ -411,7 +419,8 @@
             "ability1": "Faint: Make all animals Weak",
             "ability2": "Faint: Make all animals Weak",
             "ability3": "Faint: Make all animals Weak",
-            "path": "./assets/img/microbe.png"
+            "path": "./assets/img/microbe.png",
+            "special" : "weak"
         },
         {
             "name": "Rhino",
@@ -429,7 +438,8 @@
             "ability1": "No ability (comes with poison attack)",
             "ability2": "No ability (comes with poison attack)",
             "ability3": "No ability (comes with poison attack)",
-            "path": "./assets/img/scorpion.png"
+            "path": "./assets/img/scorpion.png",
+            "special" : "poison"
         },
         {
             "name": "Seal",
@@ -458,7 +468,8 @@
             "ability1": "Hurt: Gain Coconut Shield (no damage once)",
             "ability2": "Hurt: Gain Coconut Shield (no damage once)",
             "ability3": "Hurt: Gain Coconut Shield (no damage once)",
-            "path": "./assets/img/gorilla.png"
+            "path": "./assets/img/gorilla.png",
+            "special" : "coconutarmor"
         },
         {
             "name": "Leopard",

@@ -2,71 +2,78 @@
 $(document).ready(function () {
     // ========== ACCORDION ==========
     // expand and close
-    $('.toggler').click(function () {
-        $(this).toggleClass('show');
-        $(this).next('.accordion-content').toggleClass('show');
-        $(this).next('.accordion-content').slideToggle(600);
-    });
-    // expand first by default
-    var elanimal = $('.animals').find('.toggler:first');
-    var elfood = $('.foods').find('.toggler:first');
-    elanimal.toggleClass('show');
-    elanimal.next('.accordion-content').toggleClass('show');
-    elanimal.next('.accordion-content').slideToggle(600);
-    elfood.toggleClass('show');
-    elfood.next('.accordion-content').toggleClass('show');
-    elfood.next('.accordion-content').slideToggle(600);
+    if ($('.accordion').length) {
+        $('.toggler').click(function () {
+            $(this).toggleClass('show');
+            $(this).next('.accordion-content').toggleClass('show');
+            $(this).next('.accordion-content').slideToggle(600);
+        });
+        // expand first by default
+        var elanimal = $('.animals').find('.toggler:first');
+        var elfood = $('.foods').find('.toggler:first');
+        elanimal.toggleClass('show');
+        elanimal.next('.accordion-content').toggleClass('show');
+        elanimal.next('.accordion-content').slideToggle(600);
+        elfood.toggleClass('show');
+        elfood.next('.accordion-content').toggleClass('show');
+        elfood.next('.accordion-content').slideToggle(600);
+    }
+
 
 
     // ========== LIGHTBOX ==========
-    // open on animal click in accordion
-    $('.accordion').find('img').click(function () {
-        var content = '<div class="animalcontainer">' + $(this).closest('.animalcontainer').html() + '</div>';
-        if (content == '<div class="animalcontainer">undefined</div>') {
-            content = '<div class="foodcontainer">' + $(this).closest('.foodcontainer').html() + '</div>';
-        }
-        $('.lightbox').html(content);
-        $('.lightbox').toggleClass('show disabled');
-        setTimeout(function () {
+    if ($('.lightbox').length) {
+        // open on animal click in accordion
+        $('.accordion').find('img').click(function () {
+            var content = '<div class="animalcontainer">' + $(this).closest('.animalcontainer').html() + '</div>';
+            if (content == '<div class="animalcontainer">undefined</div>') {
+                content = '<div class="foodcontainer">' + $(this).closest('.foodcontainer').html() + '</div>';
+            }
+            $('.lightbox').html(content);
+            $('.lightbox').toggleClass('show disabled');
+            setTimeout(function () {
+                $('.lightbox').find('.animalcontainer').toggleClass('show');
+                $('.lightbox').find('.foodcontainer').toggleClass('show');
+            }, 100);
+            setTimeout(function () {
+                $('.lightbox').toggleClass('disabled');
+            }, 500);
+
+
+        })
+        // close on click aside
+        $('.lightbox').click(function (e) {
+            if (e.target !== e.currentTarget || $(this).hasClass('disabled')) return;
+            $('.lightbox').toggleClass('disabled');
             $('.lightbox').find('.animalcontainer').toggleClass('show');
             $('.lightbox').find('.foodcontainer').toggleClass('show');
-        }, 100);
-        setTimeout(function () {
-            $('.lightbox').toggleClass('disabled');
-        }, 500);
-
-
-    })
-    // close on click aside
-    $('.lightbox').click(function (e) {
-        if (e.target !== e.currentTarget || $(this).hasClass('disabled')) return;
-        $('.lightbox').toggleClass('disabled');
-        $('.lightbox').find('.animalcontainer').toggleClass('show');
-        $('.lightbox').find('.foodcontainer').toggleClass('show');
-        setTimeout(function () {
-            $('.lightbox').toggleClass('show');
-            $('.lightbox').toggleClass('disabled');
-        }, 500);
-    })
+            setTimeout(function () {
+                $('.lightbox').toggleClass('show');
+                $('.lightbox').toggleClass('disabled');
+            }, 500);
+        })
+    }
 
 
     // ========== SEARCH ==========
     // highlighting and error handling
-    $('#search').keyup(function () {
-        $('#search').removeClass('error');
-        removeHighlightings();
-    });
-    $('#search').click(function () {
-        removeHighlightings();
-    });
-    $('.accordion').find('img').click(function () {
-        removeHighlightings();
-    });
-    // Search
-    document.getElementById('search').addEventListener('keyup', debounce((bla) => {
-        var search = document.getElementById('search').value;
-        toggleAndScrollTo(search.toLowerCase().replace(/\s/g, ''));
-    }, 1000));
+    if ($('#search').length) {
+        $('#search').keyup(function () {
+            $('#search').removeClass('error');
+            removeHighlightings();
+        });
+        $('#search').click(function () {
+            removeHighlightings();
+        });
+        $('.accordion').find('img').click(function () {
+            removeHighlightings();
+        });
+        // Search
+        document.getElementById('search').addEventListener('keyup', debounce((bla) => {
+            var search = document.getElementById('search').value;
+            toggleAndScrollTo(search.toLowerCase().replace(/\s/g, ''));
+        }, 1000));
+    }
 
 
     // ========== TOTOP ==========
