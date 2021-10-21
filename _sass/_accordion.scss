@@ -48,6 +48,24 @@ noscript {
             padding: 5px;
         }
     }
+    .specialcontainer {
+        transition: all 0.5s ease-in;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        .special-headline {
+            font-size: $h4-font-size;
+        }
+        img {
+            width: 25%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    }
+    .specialcontainer.show {
+        max-height: 1000px;
+        margin-top: 10px;
+        padding: 10px;
+    }
 }
 .lightbox.show {
     display: block;
@@ -61,6 +79,8 @@ noscript {
     }
 }
 
+/*====================================================*/
+
 .animals,
 .foods {
     .accordion {
@@ -70,6 +90,7 @@ noscript {
         }
     }
 }
+
 .accordion {
     .toggler {
         transition: color 0.5s;
@@ -133,7 +154,9 @@ noscript {
             cursor: pointer;
         }
     }
-    .animalstats {
+    .animalstats,
+    .foodstats,
+    .specialstats {
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
@@ -160,6 +183,10 @@ noscript {
     .animalabilities,
     .foodabilities {
         display: none;
+    }
+    .specialcontainer {
+        max-height: 0;
+        padding-top: 10px;
     }
 }
 

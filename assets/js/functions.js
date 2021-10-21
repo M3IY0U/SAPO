@@ -38,9 +38,13 @@ $(document).ready(function () {
             setTimeout(function () {
                 $('.lightbox').toggleClass('disabled');
             }, 500);
+            setTimeout(function () {
+                if ($('.lightbox').find('.specialcontainer').length) {
+                    $('.specialcontainer').toggleClass('show');
+                }
+            }, 1000);
+        });
 
-
-        })
         // close on click aside
         $('.lightbox').click(function (e) {
             if (e.target !== e.currentTarget || $(this).hasClass('disabled')) return;
@@ -50,10 +54,12 @@ $(document).ready(function () {
             setTimeout(function () {
                 $('.lightbox').toggleClass('show');
                 $('.lightbox').toggleClass('disabled');
+                if ($('.lightbox').find('.specialcontainer').length) {
+                    $('.specialcontainer').toggleClass('show');
+                }
             }, 500);
-        })
+        });
     }
-
 
     // ========== SEARCH ==========
     // highlighting and error handling

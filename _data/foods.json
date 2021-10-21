@@ -8,7 +8,13 @@
         {
             "name": "Honey",
             "ability": "Give an animal Faint: Summon 1/1 Honey Bee",
-            "path": "./assets/img/honey.png"
+            "path": "./assets/img/honey.png",
+            "special": {
+                "name": "Bee",
+                "attack": 1,
+                "hp": 1,
+                "path": "./assets/img/bee.png"
+            }
         }
     ],
     "tier2": [
@@ -31,8 +37,13 @@
     "tier3": [
         {
             "name": "Garlic",
-            "ability": "Give an animal Garlic Armor (2 less Damage each time)",
-            "path": "./assets/img/garlic.png"
+            "ability": "Give an animal Garlic Armor",
+            "path": "./assets/img/garlic.png",
+            "special": {
+                "name": "Garlic Armor",
+                "ability": "Reduce damage taken by 2 everytime",
+                "path": "./assets/img/garlic.png"
+            }
         },
         {
             "name": "Salad Bowl",
@@ -56,7 +67,12 @@
         {
             "name": "Chili",
             "ability": "Give an animal Splash Attack",
-            "path": "./assets/img/chili.png"
+            "path": "./assets/img/chili.png",
+            "special": {
+                "name": "Splash Attack",
+                "ability": "Deal up to 5 Damage to second enemy in line",
+                "path": "./assets/img/chili.png"
+            }
         },
         {
             "name": "Chocolate",
@@ -73,12 +89,22 @@
         {
             "name": "Melon",
             "ability": "Give an animal Melon Armor",
-            "path": "./assets/img/melon.png"
+            "path": "./assets/img/melon.png",
+            "special": {
+                "name": "Melon Armor",
+                "ability": "Prevent 20 damage on first attack",
+                "path": "./assets/img/melon.png"
+            }
         },
         {
             "name": "Mushroom",
             "ability": "Give animal Extra Life as a 1/1",
-            "path": "./assets/img/mushroom.png"
+            "path": "./assets/img/mushroom.png",
+            "special": {
+                "name": "Extra Life",
+                "ability": "Faint: Resummon as 1/1",
+                "path": "./assets/img/mushroom.png"
+            }
         },
         {
             "name": "Pizza",

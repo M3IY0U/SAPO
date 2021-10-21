@@ -29,6 +29,16 @@ body {
             }
         }
     }
+    .specialcontainer {
+        .specialstats {
+            .attack {
+                background-image: url("{{ '/assets/img/stickerfist.png' | absolute_url }}");
+            }
+            .hp {
+                background-image: url("{{ '/assets/img/stickerheart.png' | absolute_url }}");
+            }
+        }
+    }
 }
 
 .accordion {

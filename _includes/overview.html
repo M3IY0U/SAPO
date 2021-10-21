@@ -11,7 +11,7 @@
                 {% for animal in site.data.animals.tier1 %}
                 <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
                     <p class="animal-headline">{{animal.name}}</p>
-                    <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200 height=200>
                     <div class="animalstats">
                         <div class="attack">
                             <p>{{animal.attack}}</p>
@@ -25,6 +25,27 @@
                         <p>Lvl. 2: {{animal.ability2}}</p>
                         <p>Lvl. 3: {{animal.ability3}}</p>
                     </div>
+                    {% if animal.special %}
+                    <div class="specialcontainer" id="{{animal.special.name}}">
+                        <p class="special-headline">{{animal.special.name}}</p>
+                        <img src="{{animal.special.path}}" alt="{{animal.special.name}}" width=200 height=200>
+                        {% if {{animal.special.attack}} %}
+                        <div class="specialstats">
+                            <div class="attack">
+                                <p>{{animal.special.attack}}</p>
+                            </div>
+                            <div class="hp">
+                                <p>{{animal.special.hp}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if {{animal.special.ability}} %}
+                        <div class="specialabilities">
+                            <p>{{animal.special.ability}}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
@@ -38,7 +59,7 @@
                 {% for animal in site.data.animals.tier2 %}
                 <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
                     <p class="animal-headline">{{animal.name}}</p>
-                    <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200 height=200>
                     <div class="animalstats">
                         <div class="attack">
                             <p>{{animal.attack}}</p>
@@ -52,6 +73,27 @@
                         <p>Lvl. 2: {{animal.ability2}}</p>
                         <p>Lvl. 3: {{animal.ability3}}</p>
                     </div>
+                    {% if animal.special %}
+                    <div class="specialcontainer" id="{{animal.special.name}}">
+                        <p class="special-headline">{{animal.special.name}}</p>
+                        <img src="{{animal.special.path}}" alt="{{animal.special.name}}" width=200 height=200>
+                        {% if {{animal.special.attack}} %}
+                        <div class="specialstats">
+                            <div class="attack">
+                                <p>{{animal.special.attack}}</p>
+                            </div>
+                            <div class="hp">
+                                <p>{{animal.special.hp}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if {{animal.special.ability}} %}
+                        <div class="specialabilities">
+                            <p>{{animal.special.ability}}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
@@ -65,7 +107,7 @@
                 {% for animal in site.data.animals.tier3 %}
                 <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
                     <p class="animal-headline">{{animal.name}}</p>
-                    <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200 height=200>
                     <div class="animalstats">
                         <div class="attack">
                             <p>{{animal.attack}}</p>
@@ -79,6 +121,27 @@
                         <p>Lvl. 2: {{animal.ability2}}</p>
                         <p>Lvl. 3: {{animal.ability3}}</p>
                     </div>
+                    {% if animal.special %}
+                    <div class="specialcontainer" id="{{animal.special.name}}">
+                        <p class="special-headline">{{animal.special.name}}</p>
+                        <img src="{{animal.special.path}}" alt="{{animal.special.name}}" width=200 height=200>
+                        {% if {{animal.special.attack}} %}
+                        <div class="specialstats">
+                            <div class="attack">
+                                <p>{{animal.special.attack}}</p>
+                            </div>
+                            <div class="hp">
+                                <p>{{animal.special.hp}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if {{animal.special.ability}} %}
+                        <div class="specialabilities">
+                            <p>{{animal.special.ability}}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
@@ -92,7 +155,7 @@
                 {% for animal in site.data.animals.tier4 %}
                 <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
                     <p class="animal-headline">{{animal.name}}</p>
-                    <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200 height=200>
                     <div class="animalstats">
                         <div class="attack">
                             <p>{{animal.attack}}</p>
@@ -106,6 +169,27 @@
                         <p>Lvl. 2: {{animal.ability2}}</p>
                         <p>Lvl. 3: {{animal.ability3}}</p>
                     </div>
+                    {% if animal.special %}
+                    <div class="specialcontainer" id="{{animal.special.name}}">
+                        <p class="special-headline">{{animal.special.name}}</p>
+                        <img src="{{animal.special.path}}" alt="{{animal.special.name}}" width=200 height=200>
+                        {% if {{animal.special.attack}} %}
+                        <div class="specialstats">
+                            <div class="attack">
+                                <p>{{animal.special.attack}}</p>
+                            </div>
+                            <div class="hp">
+                                <p>{{animal.special.hp}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if {{animal.special.ability}} %}
+                        <div class="specialabilities">
+                            <p>{{animal.special.ability}}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
@@ -119,7 +203,7 @@
                 {% for animal in site.data.animals.tier5 %}
                 <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
                     <p class="animal-headline">{{animal.name}}</p>
-                    <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200 height=200>
                     <div class="animalstats">
                         <div class="attack">
                             <p>{{animal.attack}}</p>
@@ -133,6 +217,27 @@
                         <p>Lvl. 2: {{animal.ability2}}</p>
                         <p>Lvl. 3: {{animal.ability3}}</p>
                     </div>
+                    {% if animal.special %}
+                    <div class="specialcontainer" id="{{animal.special.name}}">
+                        <p class="special-headline">{{animal.special.name}}</p>
+                        <img src="{{animal.special.path}}" alt="{{animal.special.name}}" width=200 height=200>
+                        {% if {{animal.special.attack}} %}
+                        <div class="specialstats">
+                            <div class="attack">
+                                <p>{{animal.special.attack}}</p>
+                            </div>
+                            <div class="hp">
+                                <p>{{animal.special.hp}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if {{animal.special.ability}} %}
+                        <div class="specialabilities">
+                            <p>{{animal.special.ability}}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
@@ -146,7 +251,7 @@
                 {% for animal in site.data.animals.tier6 %}
                 <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
                     <p class="animal-headline">{{animal.name}}</p>
-                    <img src="{{animal.path}}" alt="{{animal.name}}" width=200 height=200>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200 height=200>
                     <div class="animalstats">
                         <div class="attack">
                             <p>{{animal.attack}}</p>
@@ -160,6 +265,27 @@
                         <p>Lvl. 2: {{animal.ability2}}</p>
                         <p>Lvl. 3: {{animal.ability3}}</p>
                     </div>
+                    {% if animal.special %}
+                    <div class="specialcontainer" id="{{animal.special.name}}">
+                        <p class="special-headline">{{animal.special.name}}</p>
+                        <img src="{{animal.special.path}}" alt="{{animal.special.name}}" width=200 height=200>
+                        {% if {{animal.special.attack}} %}
+                        <div class="specialstats">
+                            <div class="attack">
+                                <p>{{animal.special.attack}}</p>
+                            </div>
+                            <div class="hp">
+                                <p>{{animal.special.hp}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if {{animal.special.ability}} %}
+                        <div class="specialabilities">
+                            <p>{{animal.special.ability}}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
@@ -178,10 +304,31 @@
                 {% for food in site.data.foods.tier1 %}
                 <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
                     <p class="food-headline">{{food.name}}</p>
-                    <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                    <img src="{{food.path}}" alt="{{food.name}}" title="{{food.ability}}" width=200 height=200>
                     <div class="foodabilities">
                         <p>{{food.ability}}</p>
                     </div>
+                    {% if food.special %}
+                    <div class="specialcontainer" id="{{food.special.name}}">
+                        <p class="special-headline">{{food.special.name}}</p>
+                        <img src="{{food.special.path}}" alt="{{food.special.name}}" width=200 height=200>
+                        {% if {{food.special.attack}} %}
+                        <div class="specialstats">
+                            <div class="attack">
+                                <p>{{food.special.attack}}</p>
+                            </div>
+                            <div class="hp">
+                                <p>{{food.special.hp}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if {{food.special.ability}} %}
+                        <div class="specialabilities">
+                            <p>{{food.special.ability}}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
@@ -195,10 +342,31 @@
                 {% for food in site.data.foods.tier2 %}
                 <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
                     <p class="food-headline">{{food.name}}</p>
-                    <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                    <img src="{{food.path}}" alt="{{food.name}}" title="{{food.ability}}" width=200 height=200>
                     <div class="foodabilities">
                         <p>{{food.ability}}</p>
                     </div>
+                    {% if food.special %}
+                    <div class="specialcontainer" id="{{food.special.name}}">
+                        <p class="special-headline">{{food.special.name}}</p>
+                        <img src="{{food.special.path}}" alt="{{food.special.name}}" width=200 height=200>
+                        {% if {{food.special.attack}} %}
+                        <div class="specialstats">
+                            <div class="attack">
+                                <p>{{food.special.attack}}</p>
+                            </div>
+                            <div class="hp">
+                                <p>{{food.special.hp}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if {{food.special.ability}} %}
+                        <div class="specialabilities">
+                            <p>{{food.special.ability}}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
@@ -212,10 +380,31 @@
                 {% for food in site.data.foods.tier3 %}
                 <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
                     <p class="food-headline">{{food.name}}</p>
-                    <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                    <img src="{{food.path}}" alt="{{food.name}}" title="{{food.ability}}" width=200 height=200>
                     <div class="foodabilities">
                         <p>{{food.ability}}</p>
                     </div>
+                    {% if food.special %}
+                    <div class="specialcontainer" id="{{food.special.name}}">
+                        <p class="special-headline">{{food.special.name}}</p>
+                        <img src="{{food.special.path}}" alt="{{food.special.name}}" width=200 height=200>
+                        {% if {{food.special.attack}} %}
+                        <div class="specialstats">
+                            <div class="attack">
+                                <p>{{food.special.attack}}</p>
+                            </div>
+                            <div class="hp">
+                                <p>{{food.special.hp}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if {{food.special.ability}} %}
+                        <div class="specialabilities">
+                            <p>{{food.special.ability}}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
@@ -229,10 +418,31 @@
                 {% for food in site.data.foods.tier4 %}
                 <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
                     <p class="food-headline">{{food.name}}</p>
-                    <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                    <img src="{{food.path}}" alt="{{food.name}}" title="{{food.ability}}" width=200 height=200>
                     <div class="foodabilities">
                         <p>{{food.ability}}</p>
                     </div>
+                    {% if food.special %}
+                    <div class="specialcontainer" id="{{food.special.name}}">
+                        <p class="special-headline">{{food.special.name}}</p>
+                        <img src="{{food.special.path}}" alt="{{food.special.name}}" width=200 height=200>
+                        {% if {{food.special.attack}} %}
+                        <div class="specialstats">
+                            <div class="attack">
+                                <p>{{food.special.attack}}</p>
+                            </div>
+                            <div class="hp">
+                                <p>{{food.special.hp}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if {{food.special.ability}} %}
+                        <div class="specialabilities">
+                            <p>{{food.special.ability}}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
@@ -246,10 +456,31 @@
                 {% for food in site.data.foods.tier5 %}
                 <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
                     <p class="food-headline">{{food.name}}</p>
-                    <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                    <img src="{{food.path}}" alt="{{food.name}}" title="{{food.ability}}" width=200 height=200>
                     <div class="foodabilities">
                         <p>{{food.ability}}</p>
                     </div>
+                    {% if food.special %}
+                    <div class="specialcontainer" id="{{food.special.name}}">
+                        <p class="special-headline">{{food.special.name}}</p>
+                        <img src="{{food.special.path}}" alt="{{food.special.name}}" width=200 height=200>
+                        {% if {{food.special.attack}} %}
+                        <div class="specialstats">
+                            <div class="attack">
+                                <p>{{food.special.attack}}</p>
+                            </div>
+                            <div class="hp">
+                                <p>{{food.special.hp}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if {{food.special.ability}} %}
+                        <div class="specialabilities">
+                            <p>{{food.special.ability}}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
                 </div>
 
                 {% endfor %}
@@ -264,10 +495,31 @@
                 {% for food in site.data.foods.tier6 %}
                 <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
                     <p class="food-headline">{{food.name}}</p>
-                    <img src="{{food.path}}" alt="{{food.name}}" width=200 height=200>
+                    <img src="{{food.path}}" alt="{{food.name}}" title="{{food.ability}}" width=200 height=200>
                     <div class="foodabilities">
                         <p>{{food.ability}}</p>
                     </div>
+                    {% if food.special %}
+                    <div class="specialcontainer" id="{{food.special.name}}">
+                        <p class="special-headline">{{food.special.name}}</p>
+                        <img src="{{food.special.path}}" alt="{{food.special.name}}" width=200 height=200>
+                        {% if {{food.special.attack}} %}
+                        <div class="specialstats">
+                            <div class="attack">
+                                <p>{{food.special.attack}}</p>
+                            </div>
+                            <div class="hp">
+                                <p>{{food.special.hp}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if {{food.special.ability}} %}
+                        <div class="specialabilities">
+                            <p>{{food.special.ability}}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
