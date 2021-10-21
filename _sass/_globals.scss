@@ -1,28 +1,42 @@
-h1, .h1 {
+h1,
+.h1 {
     font-size: $h1-font-size;
 }
-h2, .h2 {
+h2,
+.h2 {
     font-size: $h2-font-size;
 }
-h3, .h3 {
+h3,
+.h3 {
     font-size: $h3-font-size;
     margin: 0;
     padding: 1em 0;
 }
-h4, .h4 {
+h4,
+.h4 {
     font-size: $h4-font-size;
 }
-h5, .h5 {
+h5,
+.h5 {
     font-size: $h5-font-size;
 }
-h6, .h6 {
+h6,
+.h6 {
     font-size: $h6-font-size;
+}
+
+a {
+    color: white;
+    transition: all 0.5s;
+    &:hover {
+        color: orange;
+    }
 }
 
 .error {
     border: 1px solid red;
     color: red;
-    animation: shake .5s linear;
+    animation: shake 0.5s linear;
 }
 
 .center {
@@ -46,4 +60,11 @@ input[type="search"] {
     padding: 20px;
     font-size: $h3-font-size;
     margin-bottom: 50px;
+}
+
+.background-layer {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px;
 }
