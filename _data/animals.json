@@ -228,6 +228,15 @@
             }
         },
         {
+            "name": "Giraffe",
+            "attack": 1,
+            "hp": 3,
+            "ability1": "End turn: Give friend ahead +1/+1",
+            "ability2": "End turn: Give 2 friends ahead +1/+1",
+            "ability3": "End turn: Give 3 friends ahead +1/+1",
+            "path": "./assets/img/giraffe.png"
+        },
+        {
             "name": "Hatching Chick",
             "attack": 1,
             "hp": 1,
