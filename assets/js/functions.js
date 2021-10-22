@@ -61,6 +61,35 @@ $(document).ready(function () {
         });
     }
 
+    // ========== SHOW & HIDE VERSIONS ==========
+    if ($('.settings').length) {
+        $('button').click(function() {
+            // handle button classes
+            $('button').each(function() {
+                $(this).removeClass('active');
+            });
+            $(this).addClass('active');
+
+            // handle animalcontainer classes
+            $('.animalcontainer').each(function() {
+                $(this).addClass('hide');
+            });
+            var myclass = $(this).attr('id');
+            if (myclass == "both") {
+                $('.animalcontainer').each(function() {
+                    $(this).removeClass('hide');
+                    return;
+                });
+            }
+            $('.' + myclass).each(function() {
+                $(this).removeClass('hide');
+            });
+            $('.both').each(function() {
+                $(this).removeClass('hide');
+            });
+        });
+    }
+
     // ========== SEARCH ==========
     // highlighting and error handling
     if ($('#search').length) {
@@ -75,7 +104,7 @@ $(document).ready(function () {
             removeHighlightings();
         });
         // Search
-        document.getElementById('search').addEventListener('keyup', debounce((bla) => {
+        document.getElementById('search').addEventListener('keyup', debounce((c) => {
             var search = document.getElementById('search').value;
             toggleAndScrollTo(search.toLowerCase().replace(/\s/g, ''));
         }, 1000));
@@ -92,10 +121,12 @@ $(document).ready(function () {
 });
 
 function removeHighlightings() {
-    var containers = document.getElementsByClassName("animalcontainer");
-    for (var i = 0; i < containers.length; i++) {
-        containers.item(i).classList.remove('highlight');
-    }
+    $('.animalcontainer').each(function() {
+        $(this).removeClass('highlight');
+    });
+    $('.foodcontainer').each(function() {
+        $(this).removeClass('highlight');
+    });
 }
 function debounce(callback, wait) {
     let timeout;
@@ -104,7 +135,6 @@ function debounce(callback, wait) {
         timeout = setTimeout(function () { callback.apply(this, args); }, wait);
     }
 }
-
 function toggleAndScrollTo(anchor) {
     if (anchor == "") {
         return;
@@ -114,8 +144,8 @@ function toggleAndScrollTo(anchor) {
         return;
     }
 
-    var anchorel = $('#' + anchor);
-    if (anchorel.length) {
+    var anchorel = $('.' + anchor);
+    if (anchorel.length && !anchorel.hasClass('hide')) {
         var el = anchorel.closest('.accordion-content');
         if (!el.hasClass('show')) {
             el.toggleClass('show');

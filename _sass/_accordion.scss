@@ -74,8 +74,9 @@ noscript {
     .animalcontainer.show,
     .foodcontainer.show {
         max-width: 1000px;
-        max-height: 1000px;
+        max-height: 90%;
         padding: 10px;
+        overflow-y: scroll;
     }
 }
 
@@ -199,4 +200,8 @@ noscript {
 .foodcontainer.highlight {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
+}
+.animalcontainer.hide,
+.foodcontainer.hide {
+    display: none;
 }

@@ -1,6 +1,15 @@
 <h1 class="center mb-l">Super Auto Pets - Overview</h1>
-<p><b>Quick search animals / foods</b></p>
-<input type="search" name="search" id="search">
+<h2>Settings</h2>
+<div class="settings">
+    <p><b>Animals from these versions will be displayed / are searchable</b></p>
+    <div class="buttons">
+        <button id="both" class="active">Both</button>
+        <button id="standard">Standard Pack</button>
+        <button id="expansion1">Espansion Pack 1</button>
+    </div>
+    <p><b>Quick search animals / foods</b></p>
+    <input type="search" name="search" id="search">
+</div>
 
 <h2>Animals Overview</h2>
 <div class="animals">
@@ -9,9 +18,10 @@
         <div class="accordion-content">
             <div class="animals">
                 {% for animal in site.data.animals.tier1 %}
-                <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
+                <div class="animalcontainer {{animal.id | downcase}} {{animal.version}}">
                     <p class="animal-headline">{{animal.name}}</p>
-                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200 height=200>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200
+                        height=200>
                     <div class="animalstats">
                         <div class="attack">
                             <p>{{animal.attack}}</p>
@@ -57,9 +67,10 @@
         <div class="accordion-content">
             <div class="animals">
                 {% for animal in site.data.animals.tier2 %}
-                <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
+                <div class="animalcontainer {{animal.id | downcase}} {{animal.version}}">
                     <p class="animal-headline">{{animal.name}}</p>
-                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200 height=200>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200
+                        height=200>
                     <div class="animalstats">
                         <div class="attack">
                             <p>{{animal.attack}}</p>
@@ -105,9 +116,10 @@
         <div class="accordion-content">
             <div class="animals">
                 {% for animal in site.data.animals.tier3 %}
-                <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
+                <div class="animalcontainer {{animal.id | downcase}} {{animal.version}}">
                     <p class="animal-headline">{{animal.name}}</p>
-                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200 height=200>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200
+                        height=200>
                     <div class="animalstats">
                         <div class="attack">
                             <p>{{animal.attack}}</p>
@@ -153,9 +165,10 @@
         <div class="accordion-content">
             <div class="animals">
                 {% for animal in site.data.animals.tier4 %}
-                <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
+                <div class="animalcontainer {{animal.id | downcase}} {{animal.version}}">
                     <p class="animal-headline">{{animal.name}}</p>
-                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200 height=200>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200
+                        height=200>
                     <div class="animalstats">
                         <div class="attack">
                             <p>{{animal.attack}}</p>
@@ -201,9 +214,10 @@
         <div class="accordion-content">
             <div class="animals">
                 {% for animal in site.data.animals.tier5 %}
-                <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
+                <div class="animalcontainer {{animal.id | downcase}} {{animal.version}}">
                     <p class="animal-headline">{{animal.name}}</p>
-                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200 height=200>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200
+                        height=200>
                     <div class="animalstats">
                         <div class="attack">
                             <p>{{animal.attack}}</p>
@@ -249,9 +263,10 @@
         <div class="accordion-content">
             <div class="animals">
                 {% for animal in site.data.animals.tier6 %}
-                <div class="animalcontainer" id="{{animal.name | downcase | remove:' '}}">
+                <div class="animalcontainer {{animal.id | downcase}} {{animal.version}}">
                     <p class="animal-headline">{{animal.name}}</p>
-                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200 height=200>
+                    <img src="{{animal.path}}" alt="{{animal.name}}" title="Lvl. 1: {{animal.ability1}}" width=200
+                        height=200>
                     <div class="animalstats">
                         <div class="attack">
                             <p>{{animal.attack}}</p>
@@ -302,7 +317,7 @@
         <div class="accordion-content">
             <div class="foods">
                 {% for food in site.data.foods.tier1 %}
-                <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
+                <div class="foodcontainer {{food.id | downcase}}">
                     <p class="food-headline">{{food.name}}</p>
                     <img src="{{food.path}}" alt="{{food.name}}" title="{{food.ability}}" width=200 height=200>
                     <div class="foodabilities">
@@ -340,7 +355,7 @@
         <div class="accordion-content">
             <div class="foods">
                 {% for food in site.data.foods.tier2 %}
-                <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
+                <div class="foodcontainer {{food.id | downcase}}">
                     <p class="food-headline">{{food.name}}</p>
                     <img src="{{food.path}}" alt="{{food.name}}" title="{{food.ability}}" width=200 height=200>
                     <div class="foodabilities">
@@ -378,7 +393,7 @@
         <div class="accordion-content">
             <div class="foods">
                 {% for food in site.data.foods.tier3 %}
-                <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
+                <div class="foodcontainer {{food.id | downcase}}">
                     <p class="food-headline">{{food.name}}</p>
                     <img src="{{food.path}}" alt="{{food.name}}" title="{{food.ability}}" width=200 height=200>
                     <div class="foodabilities">
@@ -416,7 +431,7 @@
         <div class="accordion-content">
             <div class="foods">
                 {% for food in site.data.foods.tier4 %}
-                <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
+                <div class="foodcontainer {{food.id | downcase}}">
                     <p class="food-headline">{{food.name}}</p>
                     <img src="{{food.path}}" alt="{{food.name}}" title="{{food.ability}}" width=200 height=200>
                     <div class="foodabilities">
@@ -454,7 +469,7 @@
         <div class="accordion-content">
             <div class="foods">
                 {% for food in site.data.foods.tier5 %}
-                <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
+                <div class="foodcontainer {{food.id | downcase}}">
                     <p class="food-headline">{{food.name}}</p>
                     <img src="{{food.path}}" alt="{{food.name}}" title="{{food.ability}}" width=200 height=200>
                     <div class="foodabilities">
@@ -493,7 +508,7 @@
         <div class="accordion-content">
             <div class="foods">
                 {% for food in site.data.foods.tier6 %}
-                <div class="foodcontainer" id="{{food.name | downcase | remove:' '}}">
+                <div class="foodcontainer {{food.id | downcase}}">
                     <p class="food-headline">{{food.name}}</p>
                     <img src="{{food.path}}" alt="{{food.name}}" title="{{food.ability}}" width=200 height=200>
                     <div class="foodabilities">
