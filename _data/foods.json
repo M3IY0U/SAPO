@@ -114,7 +114,12 @@
         {
             "name": "Steak",
             "ability": "Give an animal 20 Steak Attack",
-            "path": "./assets/img/steak.png"
+            "path": "./assets/img/steak.png",
+            "special": {
+                "name": "Steak Attack",
+                "ability": "Deal 20 more Damage, once",
+                "path": "./assets/img/steak.png"
+            }
         }
     ]
 }
