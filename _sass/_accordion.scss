@@ -101,14 +101,9 @@ noscript {
         }
         &::before {
             float: right;
-            font: 1.3em/28px Montserrat;
-            content: "V";
+            font: 1.3em/28px FontAwesome;
+            content: "\f107";
             transition: transform 0.6s;
-        }
-        &.show {
-            &::before {
-                transform: rotateX(180deg);
-            }
         }
     }
     .accordion-content {
@@ -120,6 +115,16 @@ noscript {
             display: flex;
             flex-wrap: wrap;
             margin-bottom: 50px;
+        }
+    }
+}
+
+.accordion.show {
+    .toggler {
+        color: orange;
+        cursor: pointer;
+        &::before {
+            transform: rotateX(180deg);
         }
     }
 }

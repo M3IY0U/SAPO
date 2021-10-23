@@ -4,19 +4,16 @@ $(document).ready(function () {
     // expand and close
     if ($('.accordion').length) {
         $('.toggler').click(function () {
-            $(this).toggleClass('show');
-            $(this).next('.accordion-content').toggleClass('show');
+            $(this).closest('.accordion').toggleClass('show');
             $(this).next('.accordion-content').slideToggle(600);
         });
         // expand first by default
-        var elanimal = $('.animals').find('.toggler:first');
-        var elfood = $('.foods').find('.toggler:first');
+        var elanimal = $('.animals').closest('.accordion:first-of-type');
+        var elfood = $('.foods').closest('.accordion:first-of-type');
         elanimal.toggleClass('show');
-        elanimal.next('.accordion-content').toggleClass('show');
-        elanimal.next('.accordion-content').slideToggle(600);
+        elanimal.find('.accordion-content').slideToggle(600);
         elfood.toggleClass('show');
-        elfood.next('.accordion-content').toggleClass('show');
-        elfood.next('.accordion-content').slideToggle(600);
+        elfood.find('.accordion-content').slideToggle(600);
     }
 
 
@@ -146,10 +143,10 @@ function toggleAndScrollTo(anchor) {
 
     var anchorel = $('.' + anchor);
     if (anchorel.length && !anchorel.hasClass('hide')) {
-        var el = anchorel.closest('.accordion-content');
-        if (!el.hasClass('show')) {
-            el.toggleClass('show');
-            el.slideToggle(400);
+        var accordion = anchorel.closest('.accordion');
+        if (!accordion.hasClass('show')) {
+            accordion.toggleClass('show');
+            accordion.find('.accordion-content').slideToggle(400);
         }
         anchorel.addClass('highlight');
         $('html, body').animate({

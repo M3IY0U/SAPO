@@ -308,7 +308,7 @@
         },
         {
             "name": "Tabby Cat",
-            "id": "tabbycat tabby cat",
+            "id": "tabbycat tabby",
             "attack": 4,
             "hp": 3,
             "ability1": "Eats shop food: Give friends +1 Attack until end of battle",
@@ -383,7 +383,7 @@
         },
         {
             "name": "Kangaroo",
-            "id": "kangaroo",
+            "id": "kangaroo overpowered",
             "attack": 2,
             "hp": 3,
             "ability1": "Friend ahead attacks: Gain +2/+2",
@@ -874,7 +874,7 @@
                 "name": "Fly",
                 "attack": "?",
                 "hp": "?",
-                "path": "./assets/img/fly.png"
+                "path": "./assets/img/flytoken.png"
             }
         },
         {

@@ -29,7 +29,7 @@
         {
             "name": "Meat Bone",
             "id": "meatbone meat bone",
-            "ability": "Give an animal Bone Attack: 5 damage more on first attack",
+            "ability": "Give an animal Bone Attack: +5 damage per attack",
             "path": "./assets/img/bonemeat.png"
         },
         {
@@ -133,7 +133,7 @@
             "path": "./assets/img/steak.png",
             "special": {
                 "name": "Steak Attack",
-                "ability": "Deal 20 more Damage, once",
+                "ability": "Deal +20 Damage on first attack",
                 "path": "./assets/img/steak.png"
             }
         }
