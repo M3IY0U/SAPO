@@ -882,9 +882,9 @@
             "id": "gorilla",
             "attack": 6,
             "hp": 6,
-            "ability1": "Hurt: Gain Coconut Shield (no damage once)",
-            "ability2": "Hurt: Gain Coconut Shield (no damage once)",
-            "ability3": "Hurt: Gain Coconut Shield (no damage once)",
+            "ability1": "Hurt: Gain Coconut Shield",
+            "ability2": "Hurt: Gain Coconut Shield",
+            "ability3": "Hurt: Gain Coconut Shield",
             "version": "both",
             "path": "./assets/img/gorilla.png",
             "special": {

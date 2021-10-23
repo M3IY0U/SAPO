@@ -59,6 +59,9 @@ hr {
 .mb-l {
     margin-bottom: 60px;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 .settings {
     position: relative;
