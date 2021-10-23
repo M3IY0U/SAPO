@@ -26,12 +26,14 @@ noscript {
         transform: translate(-50%, -50%);
         border: 1px solid white;
         border-radius: 10px;
-        max-width: 0;
         max-height: 0;
         transition: all 0.5s;
         min-width: 400px;
         @include respond-below(sm) {
             min-width: 80%;
+        }
+        .animal-headline {
+            color: black;
         }
         img {
             opacity: 1;
@@ -42,10 +44,24 @@ noscript {
         }
         .animalabilities,
         .foodabilities {
+            margin: 0 auto;
             display: block;
             background: rgba(0, 0, 0, 0.5);
             border-radius: 5px;
             padding: 5px;
+        }
+        .closebutton {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: black;
+            &::before {
+                float: right;
+                font: 1.3em/28px FontAwesome;
+                content: "\f00d";
+                transition: transform 0.6s;
+            }
         }
     }
     .specialcontainer {
@@ -73,7 +89,6 @@ noscript {
     background: rgba(0, 0, 0, 0.8);
     .animalcontainer.show,
     .foodcontainer.show {
-        max-width: 1000px;
         max-height: 90%;
         padding: 10px;
         overflow-y: scroll;
@@ -187,7 +202,8 @@ noscript {
         }
     }
     .animalabilities,
-    .foodabilities {
+    .foodabilities,
+    .closebutton {
         display: none;
     }
     .specialcontainer {

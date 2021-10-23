@@ -27,6 +27,7 @@ $(document).ready(function () {
                 content = '<div class="foodcontainer">' + $(this).closest('.foodcontainer').html() + '</div>';
             }
             $('.lightbox').html(content);
+            $('body').toggleClass('noscroll');
             $('.lightbox').toggleClass('show disabled');
             setTimeout(function () {
                 $('.lightbox').find('.animalcontainer').toggleClass('show');
@@ -42,9 +43,10 @@ $(document).ready(function () {
             }, 1000);
         });
 
-        // close on click aside
+        // close on click aside or closebutton
         $('.lightbox').click(function (e) {
-            if (e.target !== e.currentTarget || $(this).hasClass('disabled')) return;
+            if (e.target !== e.currentTarget && e.target.className !== 'closebutton' || $(this).hasClass('disabled')) return;
+            $('body').toggleClass('noscroll');
             $('.lightbox').toggleClass('disabled');
             $('.lightbox').find('.animalcontainer').toggleClass('show');
             $('.lightbox').find('.foodcontainer').toggleClass('show');
@@ -56,6 +58,7 @@ $(document).ready(function () {
                 }
             }, 500);
         });
+        
     }
 
     // ========== SHOW & HIDE VERSIONS ==========

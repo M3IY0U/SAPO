@@ -3,8 +3,10 @@ body {
     font-size: $paragraph-font-size;
     font-weight: 400;
     color: white;
-
     margin: 0;
+    &.noscroll {
+        overflow: hidden;
+    }
 }
 
 section.content {

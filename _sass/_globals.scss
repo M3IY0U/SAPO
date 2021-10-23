@@ -46,7 +46,6 @@ hr {
     color: red;
     animation: shake 0.5s linear;
 }
-
 .center {
     text-align: center;
 }
@@ -77,7 +76,7 @@ hr {
             border-radius: 5px;
             border: 2px solid grey;
             opacity: 0.7;
-            transition: all .5s;
+            transition: all 0.5s;
             flex: 0 0 32%;
             &:first-of-type {
                 margin-left: 0;
