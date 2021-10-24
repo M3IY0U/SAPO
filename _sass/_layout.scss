@@ -1,9 +1,10 @@
 body {
-    font-family: "Montserrat";
+    font-family: $font-family;
     font-size: $paragraph-font-size;
     font-weight: 400;
-    color: white;
+    color: $secondary-color;
     margin: 0;
+    background-repeat: repeat;
     &.noscroll {
         overflow: hidden;
     }
@@ -15,7 +16,7 @@ section.content {
     margin: 0 auto 60px;
     padding-top: 60px;
     .inside {
-        max-width: 1400px;
+        max-width: $max-width;
         margin-left: auto;
         margin-right: auto;
     }
@@ -24,12 +25,12 @@ section.content {
 section.footer {
     position: relative;
     width: 100%;
-    background-color: #002645;
+    background-color: $primary-color;
     .inside {
-        max-width: 1400px;
+        max-width: $max-width;
         margin-left: auto;
         margin-right: auto;
-        padding: 50px 1%;
+        padding: 40px 1% 0;
         display: flex;
         flex-wrap: wrap;
         div {
@@ -58,23 +59,40 @@ section.footer {
             left: 50%;
             top: 0;
             margin-left: -20px;
-
-            font-size: 30px;
             color: white;
-            opacity: 0.8;
             transition: All 0.3s ease;
             text-decoration: none;
-
-            background: rgba(0, 28, 51, 1);
-            border-bottom-right-radius: 10px;
-            border-bottom-left-radius: 10px;
-            padding: 5px 15px;
-
+            &:before {
+                font-family: "FontAwesome";
+                content: '\f102';
+                background: rgba(255,255,255,0.1);
+                width: 40px;
+                height: 40px;
+                display: block;
+                text-align: center;
+                line-height: 40px;
+                font-size: 21px;
+                border-radius: 0 0 3px 3px;
+            }
             &:hover {
                 cursor: pointer;
                 color: orange;
                 opacity: 1;
             }
         }
+    }
+}
+
+section.bottom {
+    position: relative;
+    width: 100%;
+    background-color: $primary-color;
+    .inside {
+        max-width: $max-width;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1% 40px;
+        display: flex;
+        flex-wrap: wrap;
     }
 }

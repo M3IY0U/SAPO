@@ -8,14 +8,15 @@ noscript {
     width: 100%;
     height: 100%;
     overflow: auto;
+    background: $background-opacity;
     .center {
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        border: 1px solid white;
+        border: 1px solid $secondary-color;
         border-radius: 10px;
-        background: #002645;
+        background: $primary-color;
         padding: 10px;
     }
     .animalcontainer,
@@ -24,11 +25,14 @@ noscript {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        border: 1px solid white;
+        border: 1px solid $secondary-color;
         border-radius: 10px;
         max-height: 0;
         transition: all 0.5s;
         min-width: 400px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
         @include respond-below(sm) {
             min-width: 80%;
         }
@@ -45,11 +49,7 @@ noscript {
         }
         .animalabilities,
         .foodabilities {
-            margin: 0 auto;
             display: block;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 5px;
-            padding: 5px;
         }
         .closebutton {
             display: block;
@@ -65,33 +65,18 @@ noscript {
             }
             &:hover {
                 cursor: pointer;
-                color: orange;
+                color: $hover-color;
             }
-        }
-    }
-    .specialcontainer {
-        transition: all 0.5s ease-in;
-        background: rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-        .special-headline {
-            font-size: $h4-font-size;
-        }
-        img {
-            width: 25%;
-            height: auto;
-            margin-bottom: 10px;
         }
     }
     .specialcontainer.show {
         max-height: 1000px;
-        margin-top: 10px;
         padding: 10px;
     }
 }
 .lightbox.show {
     display: block;
     visibility: visible;
-    background: rgba(0, 0, 0, 0.8);
     .animalcontainer.show,
     .foodcontainer.show {
         max-height: 90%;
@@ -106,50 +91,45 @@ noscript {
 }
 
 /*====================================================*/
-
 .animals,
 .foods {
     .accordion {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $secondary-color;
         &:first-of-type {
-            border-top: 1px solid white;
+            border-top: 1px solid $secondary-color;
         }
-    }
-}
-
-.accordion {
-    .toggler {
-        transition: color 0.5s;
-        &:hover {
-            color: orange;
-            cursor: pointer;
+        .toggler {
+            transition: color 0.5s;
+            &:hover {
+                color: $hover-color;
+                cursor: pointer;
+            }
+            &::before {
+                float: right;
+                font: 1.3em/28px FontAwesome;
+                content: "\f107";
+                transition: transform 0.6s;
+            }
         }
-        &::before {
-            float: right;
-            font: 1.3em/28px FontAwesome;
-            content: "\f107";
-            transition: transform 0.6s;
+        .accordion-content {
+            overflow: hidden;
+            position: relative;
+            display: none;
+            .animals,
+            .foods {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 50px;
+            }
         }
-    }
-    .accordion-content {
-        overflow: hidden;
-        position: relative;
-        display: none;
-        .animals,
-        .foods {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-        }
-    }
-}
-
-.accordion.show {
-    .toggler {
-        color: orange;
-        cursor: pointer;
-        &::before {
-            transform: rotateX(180deg);
+        &.show {
+            .toggler {
+                color: $hover-color;
+                cursor: pointer;
+                &::before {
+                    transform: rotateX(180deg);
+                }
+            }
         }
     }
 }
@@ -170,6 +150,17 @@ noscript {
     }
     @include respond-below(sm) {
         flex: 0 0 100%;
+    }
+    &.highlight {
+        background-color: $background-opacity;
+        border-radius: 25px;
+    }
+    &.hide {
+        display: none;
+    }
+
+    .closebutton {
+        display: none;
     }
     .animal-headline,
     .food-headline {
@@ -212,13 +203,27 @@ noscript {
         }
     }
     .animalabilities,
-    .foodabilities,
-    .closebutton {
+    .foodabilities {
         display: none;
+        margin: 0 auto;
+        background: $background-opacity;
+        border-radius: 5px;
+        padding: 5px;
     }
     .specialcontainer {
         max-height: 0;
-        padding-top: 10px;
+        margin-top: 10px;
+        transition: all 0.5s ease-in;
+        background: $background-opacity;
+        border-radius: 5px;
+        .special-headline {
+            font-size: $h4-font-size;
+        }
+        img {
+            width: 25%;
+            height: auto;
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -226,13 +231,4 @@ noscript {
     img {
         margin-bottom: 50px;
     }
-}
-.animalcontainer.highlight,
-.foodcontainer.highlight {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
-}
-.animalcontainer.hide,
-.foodcontainer.hide {
-    display: none;
 }

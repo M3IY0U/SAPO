@@ -355,7 +355,7 @@
                 "name": "Butterfly",
                 "attack": 1,
                 "hp": 1,
-                "ability": "Copy stats of highest friend",
+                "ability": "Copy attack and health of most healthy friend",
                 "path": "./assets/img/butterfly.png"
             }
         },
@@ -750,8 +750,8 @@
             "path": "./assets/img/goat.png"
         },
         {
-           "name": "Microbe",
-           "id": "microbe",
+            "name": "Microbe",
+            "id": "microbe",
             "attack": 1,
             "hp": 1,
             "ability1": "Faint: Make all animals Weak",

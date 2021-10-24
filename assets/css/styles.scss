@@ -1,6 +1,7 @@
 ---
 ---
 
+/* internal links have to be put in here because of front matter link generation */
 /* montserrat-300 - latin */
 @font-face {
     font-family: "Montserrat";
@@ -61,16 +62,12 @@
 
 body {
     background-image: url("{{ '/assets/img/sapo-background.png' | absolute_url }}");
-    background-repeat: repeat;
 }
 
 .lightbox {
     .animalcontainer,
     .foodcontainer {
         background: url("{{ '/assets/img/battlebackground.png' | absolute_url }}");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: bottom;
         .animalstats {
             .attack {
                 background-image: url("{{ '/assets/img/stickerfist.png' | absolute_url }}");

@@ -1,68 +1,75 @@
-h1,
-.h1 {
+// Global elements
+h1,.h1 {
     font-size: $h1-font-size;
     margin: 0;
 }
-h2,
-.h2 {
+h2,.h2 {
     font-size: $h2-font-size;
     margin: 0;
     padding: 1em 0;
 }
-h3,
-.h3 {
+h3,.h3 {
     font-size: $h3-font-size;
     margin: 0;
     padding: 1em 0;
 }
-h4,
-.h4 {
+h4,.h4 {
     font-size: $h4-font-size;
 }
-h5,
-.h5 {
+h5,.h5 {
     font-size: $h5-font-size;
 }
-h6,
-.h6 {
+h6,.h6 {
     font-size: $h6-font-size;
 }
 a {
-    color: white;
+    color: $secondary-color;
     transition: all 0.5s;
     &:hover {
-        color: orange;
+        color: $hover-color;
     }
 }
 hr {
-    border-top: 1px solid white;
+    border-top: 1px solid $secondary-color;
     border-bottom: none;
     border-left: none;
     border-right: none;
 }
 
+// Global classes
 .error {
-    border: 1px solid red;
-    color: red;
+    border: 1px solid $error-color;
+    color: $error-color;
     animation: shake 0.5s linear;
 }
 .center {
-    text-align: center;
+    position: relative !important;
+    display: block !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+.fullwidth {
+    width: 100% !important;
+}
+.background-layer {
+    display: block;
+    background: $background-opacity;
+    border-radius: 5px;
+    padding: 5px;
 }
 
-.mb-s {
-    margin-bottom: 20px;
-}
-.mb-m {
-    margin-bottom: 40px;
-}
-.mb-l {
-    margin-bottom: 60px;
-}
+.mb-s {margin-bottom: 20px !important;}
+.mb-m {margin-bottom: 40px !important;}
+.mb-l {margin-bottom: 60px !important;}
+.pb-s {padding-bottom: 20px !important;}
+.pb-m {padding-bottom: 40px !important;}
+.pb-l {padding-bottom: 60px !important;}
+
 ::-webkit-scrollbar {
     display: none;
 }
 
+// More specific global page styles - settings section atop
 .settings {
     position: relative;
     display: block;
@@ -106,11 +113,4 @@ hr {
         padding: 20px;
         font-size: $h3-font-size;
     }
-}
-
-.background-layer {
-    display: block;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    padding: 5px;
 }

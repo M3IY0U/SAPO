@@ -1,3 +1,5 @@
+// Fonts
+$font-family: "Montserrat";
 $h1-font-size: 50px;
 $h2-font-size: 35px;
 $h3-font-size: 23px;
@@ -5,3 +7,14 @@ $h4-font-size: 20px;
 $h5-font-size: 18px;
 $h6-font-size: 16px;
 $paragraph-font-size: 15px;
+
+// Colors
+$primary-color: #002645;
+$secondary-color: white;
+$hover-color: orange;
+$error-color: red;
+$success-color: green;
+
+// Misc
+$max-width: 1400px;
+$background-opacity: rgba(0, 0, 0, 0.5);

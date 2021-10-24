@@ -1,29 +1,33 @@
 <section class="footer">
-    <div class="inside">
-      <a id="totop">&#x21e7;</a>
-      <div class="about">
-        <p class="headline">About us</p>
-        <p>This was a just-for-fun project to offer a basic overview to animals and updates to a game we like:</p>
-        <p>Super Auto Pets created and rights by
-          <a href="https://teamwoodgames.com/" target="_blank"><span>teamwoodgames</span></a><br>
-          <br>
-          <b>Play it yourself:</b>
-          <br>
-          <a href="https://play.google.com/store/apps/details?id=com.teamwood.spacewood.unity"
-            class="android" target="_blank">Android</a>
-          <br>
-          <a href="https://store.steampowered.com/app/1714040/Super_Auto_Pets/" class="steam" target="_blank">Steam</a>
-        </p>
-      </div>
-      <div class="links">
-        <p class="headline">Contact & Links</p>
-        <a href="mailto:{{site.mail}}" class="mail">{{site.mail}}</a>
-        <a href="{{site.github1}}" class="git" target="_blank">Github: {{site.github1_username}}</a>
-        <a href="{{site.github2}}" class="git" target="_blank">Github: {{site.github2_username}}</a>
+  <div class="inside pb-m">
+    <a id="totop"></a>
+    <div class="about">
+      <p class="headline">About us</p>
+      <p>This was a just-for-fun project to offer a basic overview to animals and updates to a game we like:</p>
+      <p>Super Auto Pets created and rights by
+        <a href="https://teamwoodgames.com/" target="_blank"
+          title="Teamwoodgames site"><span>teamwoodgames</span></a><br>
         <br>
-        <a title="Home" href="{{ '/' | absolute_url }}">Home</a>
-        <a title="Imprint" href="{{ 'imprint' | absolute_url }}">Imprint</a>
-        <a title="Privacy Policy" href="{{ 'privacy-policy' | absolute_url }}">Privacy Policy</a>
-      </div>
+        <b>Play it yourself:</b>
+        <br>
+        <a href="https://play.google.com/store/apps/details?id=com.teamwood.spacewood.unity" class="android"
+          target="_blank" title="Google Playstore page">Android</a>
+        <br>
+        <a href="https://store.steampowered.com/app/1714040/Super_Auto_Pets/" class="steam" target="_blank"
+          title="Steampage">Steam</a>
+      </p>
     </div>
-  </section>
+    <div class="links">
+      <p class="headline">Contact & Links</p>
+      <a href="mailto:{{site.mail}}" class="mail" title="mailto:{{site.mail}}">{{site.mail}}</a>
+      <a href="{{site.github1}}" class="git" target="_blank" title="{{site.github1}}">Github:
+        {{site.github1_username}}</a>
+      <a href="{{site.github2}}" class="git" target="_blank" title="{{site.github2}}">Github:
+        {{site.github2_username}}</a>
+      <br>
+      <a href="{{ '/' | absolute_url }}" title="Home">Home</a>
+      <a href="{{ 'imprint' | absolute_url }}" title="Imprint">Imprint</a>
+      <a href="{{ 'privacy-policy' | absolute_url }}" title="Privacy Policy">Privacy Policy</a>
+    </div>
+  </div>
+</section>
