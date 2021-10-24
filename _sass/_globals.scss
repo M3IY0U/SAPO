@@ -35,6 +35,27 @@ hr {
     border-left: none;
     border-right: none;
 }
+noscript {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: $background-opacity;
+    p {
+        position: fixed;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $secondary-color;
+        border-radius: 10px;
+        background: $primary-color;
+        padding: 10px;
+        z-index: 99999;
+    }
+}
 
 // Global classes
 .error {

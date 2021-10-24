@@ -67,43 +67,18 @@ body {
 .lightbox {
     .animalcontainer,
     .foodcontainer {
-        background: url("{{ '/assets/img/battlebackground.png' | absolute_url }}");
-        .animalstats {
-            .attack {
-                background-image: url("{{ '/assets/img/stickerfist.png' | absolute_url }}");
-            }
-            .hp {
-                background-image: url("{{ '/assets/img/stickerheart.png' | absolute_url }}");
-            }
-        }
-    }
-    .specialcontainer {
-        .specialstats {
-            .attack {
-                background-image: url("{{ '/assets/img/stickerfist.png' | absolute_url }}");
-            }
-            .hp {
-                background-image: url("{{ '/assets/img/stickerheart.png' | absolute_url }}");
-            }
-        }
+        background-image: url("{{ '/assets/img/battlebackground.png' | absolute_url }}");
     }
 }
-
+.lightbox,
 .accordion {
-    .accordion-content {
-        .animals,
-        .foods {
-            .animalcontainer,
-            .foodcontainer {
-                .animalstats {
-                    .attack {
-                        background-image: url("{{ '/assets/img/stickerfist.png' | absolute_url }}");
-                    }
-                    .hp {
-                        background-image: url("{{ '/assets/img/stickerheart.png' | absolute_url }}");
-                    }
-                }
-            }
+    .animalstats,
+    .specialstats {
+        .attack {
+            background-image: url("{{ '/assets/img/stickerfist.png' | absolute_url }}");
+        }
+        .hp {
+            background-image: url("{{ '/assets/img/stickerheart.png' | absolute_url }}");
         }
     }
 }
