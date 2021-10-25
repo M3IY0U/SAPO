@@ -61,13 +61,16 @@
 @import "accordion";
 
 body {
-    background-image: url("{{ '/assets/img/sapo-background.png' | absolute_url }}");
+    // background-image: url("{{ '/assets/img/sapo-background.png' | absolute_url }}");
+    // background-repeat: repeat;
 }
 
 .lightbox {
     .animalcontainer,
     .foodcontainer {
         background-image: url("{{ '/assets/img/battlebackground.png' | absolute_url }}");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
     }
 }
 .lightbox,

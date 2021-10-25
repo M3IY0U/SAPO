@@ -4,7 +4,10 @@ body {
     font-weight: 400;
     color: $secondary-color;
     margin: 0;
-    background-repeat: repeat;
+
+    background: linear-gradient(90deg, $primary-color ($dot-space - $dot-size), transparent 1%) center,
+        linear-gradient($primary-color ($dot-space - $dot-size), transparent 1%) center, $secondary-color;
+    background-size: $dot-space $dot-space;
     &.noscroll {
         overflow: hidden;
     }
@@ -26,6 +29,7 @@ section.footer {
     position: relative;
     width: 100%;
     background-color: $primary-color;
+    border-top: 1px solid $secondary-color;
     .inside {
         max-width: $max-width;
         margin-left: auto;
@@ -64,8 +68,8 @@ section.footer {
             text-decoration: none;
             &:before {
                 font-family: "FontAwesome";
-                content: '\f102';
-                background: rgba(255,255,255,0.1);
+                content: "\f102";
+                background: rgba(255, 255, 255, 0.1);
                 width: 40px;
                 height: 40px;
                 display: block;
