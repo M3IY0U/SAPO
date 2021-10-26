@@ -167,6 +167,22 @@
         width: 80%;
         max-width: 175px;
         height: auto;
+        -webkit-filter: drop-shadow(2px 2px 0 black)
+                        drop-shadow(-2px 2px 0 black)
+                        drop-shadow(2px -2px 0 black)
+                        drop-shadow(-2px -2px 0 black)
+                        drop-shadow(3px 3px 0 white)
+                        drop-shadow(-3px 3px 0 white)
+                        drop-shadow(3px -3px 0 white)
+                        drop-shadow(-3px -3px 0 white);
+        filter: drop-shadow(2px 2px 0 black)
+                drop-shadow(-2px 2px 0 black)
+                drop-shadow(2px -2px 0 black)
+                drop-shadow(-2px -2px 0 black)
+                drop-shadow(3px 3px 0 white)
+                drop-shadow(-3px 3px 0 white)
+                drop-shadow(3px -3px 0 white)
+                drop-shadow(-3px -3px 0 white);
         &:hover {
             opacity: 0.8;
             cursor: pointer;
@@ -188,6 +204,22 @@
             background-repeat: no-repeat;
             background-size: 50px 50px;
             background-position: center;
+            -webkit-filter: drop-shadow(2px 2px 0 black)
+                        drop-shadow(-2px 2px 0 black)
+                        drop-shadow(2px -2px 0 black)
+                        drop-shadow(-2px -2px 0 black)
+                        drop-shadow(3px 3px 0 white)
+                        drop-shadow(-3px 3px 0 white)
+                        drop-shadow(3px -3px 0 white)
+                        drop-shadow(-3px -3px 0 white);
+            filter: drop-shadow(2px 2px 0 black)
+                    drop-shadow(-2px 2px 0 black)
+                    drop-shadow(2px -2px 0 black)
+                    drop-shadow(-2px -2px 0 black)
+                    drop-shadow(3px 3px 0 white)
+                    drop-shadow(-3px 3px 0 white)
+                    drop-shadow(3px -3px 0 white)
+                    drop-shadow(-3px -3px 0 white);
             p {
                 font-weight: bold;
                 font-size: 25px;
