@@ -5,9 +5,10 @@ body {
     color: $secondary-color;
     margin: 0;
 
-    background: linear-gradient(90deg, $primary-color ($dot-space - $dot-size), transparent 1%) center,
-        linear-gradient($primary-color ($dot-space - $dot-size), transparent 1%) center, $secondary-color;
+    background: linear-gradient(90deg, #202c3d ($dot-space - $dot-size), transparent 1%) center,
+        linear-gradient(#202c3d ($dot-space - $dot-size), transparent 1%) center, $secondary-color;
     background-size: $dot-space $dot-space;
+    background-attachment: fixed;
     &.noscroll {
         overflow: hidden;
     }
