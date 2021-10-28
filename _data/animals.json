@@ -155,7 +155,7 @@
             "name": "Bat",
             "id": "bat",
             "attack": 1,
-            "hp": 3,
+            "hp": 2,
             "ability1": "Start of battle: Make 1 enemy Weak",
             "ability2": "Start of battle: Make 2 enemies Weak",
             "ability3": "Start of battle: Make 2 enemies Weak",
@@ -163,7 +163,7 @@
             "path": "./assets/img/bat.png",
             "special": {
                 "name": "Weak",
-                "ability": "Enemies take 5 extra damage",
+                "ability": "Enemies take 3 extra damage",
                 "path": "./assets/img/microbe.png"
             }
         },
@@ -184,8 +184,8 @@
             "attack": 1,
             "hp": 3,
             "ability1": "Start of battle: Give Attack to friend ahead",
-            "ability2": "Start of battle: Give Attack to 2 friends ahead",
-            "ability3": "Start of battle: Give Attack to 3 friends ahead",
+            "ability2": "Start of battle: Give 2x Attack to friend ahead",
+            "ability3": "Start of battle: Give 3x Attack to friend ahead",
             "version": "standard",
             "path": "./assets/img/dodo.png"
         },
@@ -355,7 +355,7 @@
                 "name": "Butterfly",
                 "attack": 1,
                 "hp": 1,
-                "ability": "Copy attack and health of most healthy friend",
+                "ability": "Copy attack and health of friend with most attack and health combined",
                 "path": "./assets/img/butterfly.png"
             }
         },
@@ -761,7 +761,7 @@
             "path": "./assets/img/microbe.png",
             "special": {
                 "name": "Weak",
-                "ability": "Enemies take 5 extra damage",
+                "ability": "Enemies take 3 extra damage",
                 "path": "./assets/img/microbe.png"
             }
         },
@@ -770,9 +770,9 @@
             "id": "parrot",
             "attack": 3,
             "hp": 2,
-            "ability1": "End turn: Copy the Lvl. 1 ability from animal ahead",
-            "ability2": "End turn: Copy the Lvl. 2 ability from animal ahead",
-            "ability3": "End turn: Copy the Lvl. 3 ability from animal ahead",
+            "ability1": "End turn: Copy ability from pet ahead as Lvl. 1 until end of battle",
+            "ability2": "End turn: Copy ability from pet ahead as Lvl. 2 until end of battle",
+            "ability3": "End turn: Copy ability from pet ahead as Lvl. 3 until end of battle",
             "version": "standard",
             "path": "./assets/img/parrot.png"
         },
