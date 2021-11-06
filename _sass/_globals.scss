@@ -2,25 +2,43 @@
 h1,.h1 {
     font-size: $h1-font-size;
     margin: 0;
+    @include respond-below(sm) {
+        font-size: $h1-font-size-sm;
+    }
 }
 h2,.h2 {
     font-size: $h2-font-size;
     margin: 0;
     padding: 1em 0;
+    @include respond-below(sm) {
+        font-size: $h2-font-size-sm;
+    }
 }
 h3,.h3 {
     font-size: $h3-font-size;
     margin: 0;
     padding: 1em 0;
+    @include respond-below(sm) {
+        font-size: $h3-font-size-sm;
+    }
 }
 h4,.h4 {
     font-size: $h4-font-size;
+    @include respond-below(sm) {
+        font-size: $h4-font-size-sm;
+    }
 }
 h5,.h5 {
     font-size: $h5-font-size;
+    @include respond-below(sm) {
+        font-size: $h5-font-size-sm;
+    }
 }
 h6,.h6 {
     font-size: $h6-font-size;
+    @include respond-below(sm) {
+        font-size: $h6-font-size-sm;
+    }
 }
 a {
     color: $secondary-color;
