@@ -1,0 +1,3 @@
+RewriteEngine on 
+RewriteCond %{HTTP_HOST} ^185\.199\.108\.153
+RewriteRule (.*) https://www.superautopets.com [R=301,L]
