@@ -62,7 +62,7 @@
         {
             "name": "Canned Food",
             "id": "cannedfood canned food",
-            "ability": "Give all current and future shop animals +2/+2",
+            "ability": "Give all current and future shop animals +2/+1",
             "path": "./assets/img/cannedfood.png"
         },
         {
