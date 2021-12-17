@@ -844,8 +844,8 @@
             "attack": 8,
             "hp": 6,
             "ability1": "Before attack: Gain +2/+2",
-            "ability2": "Before attack: Gain +2/+2",
-            "ability3": "Before attack: Gain +2/+2",
+            "ability2": "Before attack: Gain +4/+4",
+            "ability3": "Before attack: Gain +6/+6",
             "version": "both",
             "path": "./assets/img/boar.png"
         },
