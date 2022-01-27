@@ -7,3 +7,4 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # Needed for Ruby 3+
 gem "webrick", "~> 1.7"
+gem "jekyll-get-json", "~> 1.0"

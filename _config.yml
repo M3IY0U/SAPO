@@ -1,5 +1,5 @@
-title: Superautopets by teamwoodgames - Unofficial Overview
-description: This site gives a detailed overview for animals and foods from the autobattler superautopets | super auto pets by teamwoodgames. Come in and take a look!
+title: Superautopets by teamwoodgames - Pets and Foods Overview
+description: This site gives a detailed list for animals and foods from the autobattler superautopets | super auto pets by teamwoodgames. Come in and take a look!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: M3IY0U
@@ -9,3 +9,10 @@ github1: https://github.com/M3IY0U
 github2: https://github.com/sleightlyclueless
 github: https://github.com/M3IY0U/SAPO
 mail: contact@superautopets.com
+plugins:
+  - jekyll-get-json
+jekyll_get_json:
+  - data: animals
+    json: 'https://api.superautopets.com/get_animals/?access_token=xoMLoIxPaQtHUt2k3ROjQRf3CV0WoSo7'
+  - data: foods
+    json: 'https://api.superautopets.com/get_foods/?access_token=xoMLoIxPaQtHUt2k3ROjQRf3CV0WoSo7'
