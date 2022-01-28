@@ -9,10 +9,3 @@ github1: https://github.com/M3IY0U
 github2: https://github.com/sleightlyclueless
 github: https://github.com/M3IY0U/SAPO
 mail: contact@superautopets.com
-plugins:
-  - jekyll-get-json
-jekyll_get_json:
-  - data: animals
-    json: 'https://api.superautopets.com/get_animals/?access_token=xoMLoIxPaQtHUt2k3ROjQRf3CV0WoSo7'
-  - data: foods
-    json: 'https://api.superautopets.com/get_foods/?access_token=xoMLoIxPaQtHUt2k3ROjQRf3CV0WoSo7'
