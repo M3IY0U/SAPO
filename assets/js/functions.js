@@ -102,7 +102,6 @@ $(document).ready(function () {
     });
 
     // ========== LIGHTBOX ==========
-
     // open on animal click in accordion
     $('.inside').delegate('img', 'click', function () {
         var content = '<div class="animalcontainer">' + $(this).closest('.animalcontainer').html() + '</div>';
