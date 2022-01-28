@@ -174,14 +174,14 @@ $(document).ready(function () {
     // ========== SEARCH ==========
     // highlighting and error handling
     if ($('#search').length) {
-        $('#search').keyup(function () {
+        $('#search').keyup(function(){
             $('#search').removeClass('error');
             removeHighlightings();
         });
-        $('#search').click(function () {
+        $('#search').click(function(){
             removeHighlightings();
         });
-        $('.accordion').find('img').click(function () {
+        $('.inside').delegate('img', 'click', function(){
             removeHighlightings();
         });
         // Search
