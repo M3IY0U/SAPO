@@ -96,7 +96,7 @@ $(document).ready(function ()
 
         })
     }).fail(function( jqxhr, textStatus, error ) {console.log( "Request Failed: " + textStatus + ", " + error )
-    }).done(function( json ) {$('.foods').append(animalcontent)})
+    }).done(function( json ) {$('.foods').append(foodcontent)})
 
     
     // ========== ACCORDION ==========
