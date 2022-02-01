@@ -109,8 +109,9 @@ $(document).ready(function ()
     // ========== LIGHTBOX ==========
     // open on animal click in accordion
     $('.inside').delegate('img', 'click', function () {
-        // add content to lightbox
+        // add content to lightbox depending on animal or food (search for animal first - if not found search for food)
         var content = '<div class="animalcontainer">' + $(this).closest('.animalcontainer').html() + '</div>'
+        if (content == '<div class="animalcontainer">undefined</div>') content = '<div class="foodcontainer">' + $(this).closest('.foodcontainer').html() + '</div>'
         $('.lightbox').html(content)
         // disable body scrolling
         $('body').toggleClass('noscroll')
