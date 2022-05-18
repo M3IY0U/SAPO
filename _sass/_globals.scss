@@ -124,9 +124,9 @@ noscript {
             font-size: $h3-font-size;
             border-radius: 5px;
             border: 2px solid grey;
-            opacity: 0.7;
+            opacity: .7;
             transition: all 0.5s;
-            flex: 0 0 32%;
+            flex: 0 0 23.5%;
             &:first-of-type {
                 margin-left: 0;
             }
@@ -142,6 +142,13 @@ noscript {
             &.active {
                 border: 2px solid black;
                 opacity: 1;
+            }
+            &:disabled {
+                cursor: not-allowed;
+                &:hover {
+                    border: 2px solid grey;
+                    opacity: .7;
+                }
             }
         }
     }
